@@ -46,18 +46,108 @@ Write a program that outputs a multiplication table like the following picture.
 
 ![Multiplication Table](figs/mul_table.png)
 
-### The following 5 questions are for NumPy. If you have used MATLAB, you will be just fine.
+The following 5 questions are for NumPy. If you have used MATLAB, you will be just fine.
 The question are extracted from [numpy-100](https://github.com/rougier/numpy-100/blob/master/100_Numpy_exercises.ipynb) and you can practise more if you have time.
 
-### Q.6: Create a checkerboard 8x8 matrix using the tile function.
+### Q.6
+Create a checkerboard 8x8 matrix using the tile function.
 
-### Q.7: Normalize a 5x5 random matrix.
+### Q.7
+Normalize a 5x5 random matrix.
 
-### Q.8: Multiply a 5x3 matrix by a 3x2 matrix (real matrix product)
+### Q.8
+Multiply a 5x3 matrix by a 3x2 matrix (real matrix product)
 
-### Q.9: Given a 1D array, negate all elements which are between 3 and 8, in place.
+### Q.9
+Given a 1D array, negate all elements which are between 3 and 8, in place.
 
-### Q.10: Consider two random array A and B, check if they are equal.
+### Q.10
+Consider two random array A and B, check if they are equal.
 
 # Chapter 2: Data Processing
+In this chapter, we will do the first 10 [knocks of image processing](https://github.com/yoyoyo-yo/Gasyori100knock).
+If you don't understand, please read the original image processing knocks which
+are originally in Japanese.
 
+### Q.1: Channel Swapping
+Change the channel order from RGB -> BGR.
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori.jpg)|![](figs/answer_1.jpg)|
+
+### Q.2: Grayscale
+Convert a color image to a grayscale one. The linear formula is
+
+Y = 0.2126 R + 0.7152 G + 0.0722 B
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori.jpg)|![](figs/answer_2.jpg)|
+
+### Q.3: Binarization
+Binarize an image given the threshold is 128.
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori.jpg)|![](figs/answer_3.jpg)|
+
+### Q.4: Binarization of Otsu
+This is an automatic thresholding algorithm by minimizing intra-class intensity
+variance or maximizing inter-class variance.
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori.jpg)|![](figs/answer_4.jpg)|
+
+### Q.5: HSV Conversion
+RGB -> HSV and HSV -> RGV
+
+In this case, invert the hue H (add 180) and display it as RGB and display the image.
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori.jpg)|![](figs/answer_5.jpg)|
+
+### Q.6: Discretization of Color
+Quantize the image as follows.
+
+```
+val = {  32  (0 <= val < 63)
+         96  (63 <= val < 127)
+        160  (127 <= val < 191)
+        224  (191 <= val < 256)
+```
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori.jpg)|![](figs/answer_6.jpg)|
+
+### Q.7: Average Pooling
+Perform an average pooling of 128x128 image by 8x8 kernel.
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori.jpg)|![](figs/answer_7.jpg)|
+
+### Q.8: Max Pooling
+Perform a max pooling of 128x128 image by 8x8 kernel.
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori.jpg)|![](figs/answer_8.jpg)|
+
+### Q.9: Gaussian Filter
+Implement the Gaussian filter (3 × 3, standard deviation 1.3) and remove the noise of a noisy image.
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori_noise.jpg)|![](figs/answer_9.jpg)|
+
+
+### Q.10: Median Filter
+Implement the median filter (3x3) and remove the noise of a noisy image.
+
+|Input|Output|
+|:---:|:---:|
+|![](figs/imori_noise.jpg)|![](figs/answer_10.jpg)|

@@ -156,7 +156,7 @@ Implement the median filter (3x3) and remove the noise of a noisy image.
 # Chapter 3: Neural Networks
 ### Q.1: Linear Regression
 * Generate a synthetic dataset containing 1000 examples with addictive noise.
-  Each sample consists of 2 features. The true parameter generating the dataset
+  Each sample consists of 2 features drawn from the standard normal distribution. The true parameter generating the dataset
   is $$w = [2, -3.4], b = 4.2$$. Sample noise from normal distribution with mean
   0 and standard deviation 0.01. Synthetic labels will be $$y = Xw^T + b + \epsilon$$.
   Plot the features, we can clearly see the linear correlation between features

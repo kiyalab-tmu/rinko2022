@@ -202,3 +202,74 @@ regularization.
 * Early Stopping
 * Weight decay (L-2 regularization)
 
+# Chapter 4: Convolutional Neural Networks
+### Q.1: 2D Convolution
+* Implement a 2D convolution layer. There are 2 parementers, the kernel and
+  scalar bias. You can initialize the kernel with random values, bias can be
+  zero.
+
+### Q.2: Edge detection
+* Apply the convolution layer you implemented for edge detection in images by
+  using edge [detection kernels](https://en.wikipedia.org/wiki/Kernel_(image_processing)).
+
+### Q.3: Padding
+* Either implement your 2D convolution to be able to do padding or use Pytorch
+  Conv2D and experiment the convolution with padding.
+
+### Q.4: Stride
+* Either implement your 2D convolution with stride or use Pytorch
+  Conv2D and experiment the convolution with stride.
+
+### Q.5: Pooling
+* Implement a 2D pooling layer that can handle both max and average pooling.
+
+### Q.6: LeNet
+* Implement a LeNet in PyTorch.
+* Train LeNet for Fashion-MNIST dataset.
+* Plot the learning curve.
+* Calculate the accuracy of the model.
+
+### Q.7: AlexNet
+* Implement AlexNet in PyTorch.
+* Train AlexNet for Fashion-MNIST dataset.
+* Plot the learning curve.
+* Calculate the accuracy of the model.
+
+### Q.8: VGG
+* Implement a VGG-11 in PyTorch. You can reduce the number of channels in VGG
+  since we are dealing with a small dataset.
+* Train VGG for Fashion-MNIST dataset.
+* Plot the learning curve.
+* Calculate the accuracy of the model.
+
+### Q.9: NiN Blocks
+* Implement a NiN model in PyTorch. [Reference](https://arxiv.org/abs/1312.4400)
+* Train NiN for Fashion-MNIST dataset.
+* Plot the learning curve.
+* Calculate the accuracy of the model.
+
+### Q.10: GoogleNet (Inception)
+* Implement Inception blocks(GoogleNet) in PyTorch.
+* Train GoogleNet for Fashion-MNIST dataset.
+* Plot the learning curve.
+* Calculate the accuracy of the model.
+
+### Q.11: Batch Normalization
+* Implement Batch Normalization
+* Apply Batch Normalization in LeNet.
+* Train LeNet for Fashion-MNIST dataset.
+* Plot the learning curve.
+* Calculate the accuracy of the model.
+
+### Q.12: ResNet
+* Implement a ResNet-18 in PyTorch.
+* Train ResNet for Fashion-MNIST dataset.
+* Plot the learning curve.
+* Calculate the accuracy of the model.
+
+### Q.13: DenseNet
+* Implement a DenseNet in PyTorch.
+* Train DenseNet for Fashion-MNIST dataset.
+* Plot the learning curve.
+* Calculate the accuracy of the model.
+

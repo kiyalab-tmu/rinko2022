@@ -230,12 +230,15 @@ regularization.
 * Calculate the accuracy of the model.
 
 ### Q.7: AlexNet
+![Comparison of LeNet and AlexNet](figs/lenet_alexnet.svg)
+[Reference](https://en.wikipedia.org/wiki/AlexNet)
 * Implement AlexNet in PyTorch.
 * Train AlexNet for Fashion-MNIST dataset.
 * Plot the learning curve.
 * Calculate the accuracy of the model.
 
 ### Q.8: VGG
+VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.1556)
 * Implement a VGG-11 in PyTorch. You can reduce the number of channels in VGG
   since we are dealing with a small dataset.
 * Train VGG for Fashion-MNIST dataset.

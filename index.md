@@ -6,10 +6,8 @@ layout: default
 * [Chapter 2: Data Processing](#chapter-2-data-processing)
 * [Chapter 3: Neural Networks](#chapter-3-neural-networks)
 * [Chapter 4: Convolutional Neural Networks](#chapter-4-convolutional-neural-networks)
-* [Chapter 5: Understanding Convolutional Neural Networks](#chapter-5-understanding-convolutional-neural-networks)
-* [Chapter 6: Recurrent Neural Networks](#chapter-6-recurrent-neural-networks)
-* [Chapter 7: Generative Models](#chapter-7-recurrent-neural-networks)
-* [Chapter 8: Security](#chapter-8-security)
+* [Chapter 5: Recurrent Neural Networks](#chapter-5-recurrent-neural-networks)
+* [Chapter 6: Generative Models](#chapter-6-generative-models)
 
 # Chapter 1: Basics
 ### The following 5 questions are just to warm you up in programming with Python.
@@ -276,3 +274,38 @@ VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.
 * Plot the learning curve.
 * Calculate the accuracy of the model.
 
+# Chapter 5: Recurrent Neural Networks
+### Q.1 Text Preprocessing
+* Download [The Time Machine](https://www.gutenberg.org/ebooks/35)
+* Read the lines from the downloaded text.
+* Write a function to tokenize each line (both word and character level).
+* Create a vocabulary (dictionary) to map each string token into numerical
+  index. (i.e., Count the unique tokens from the corpus and assign a numerical
+  index according to its frequency)
+* You can preprocess the time machine dataset as you like if you don't want to
+  follow above steps.
+
+### Q.2 Reading Sequence Data
+* Consider both random sampling and sequential partitioning.
+* Prepare data loader for the time machine dataset.
+
+### Q.3 Character-level Language Model by RNN
+* Read the dataset.
+* Define an RNN model in PyTorch.
+* Train and Predict.
+* You can also implement an RNN from scratch.
+* You might want to plot perplexity vs epochs.
+
+### Q.4 Gated Recurrent Units (GRU)
+* Explain GRU (what problem it is trying to address)
+* Use the same time machine dataset.
+* Implement a GRU.
+* Compare the results with Q.3
+* You might want to plot perplexity vs epochs.
+
+### Q.5 Long Short-Term Memory (LSTM)
+* Explain LSTM.
+* Use the same time machine dataset.
+* Implement a LSTM.
+* Compare the results with Q.3 and Q.4.
+* You might want to plot perplexity vs epochs.

@@ -309,3 +309,10 @@ VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.
 * Implement a LSTM.
 * Compare the results with Q.3 and Q.4.
 * You might want to plot perplexity vs epochs.
+
+
+### Q.6 ConvGRU
+* Explore ConvGRU. [Reference](https://arxiv.org/pdf/1511.06432.pdf)
+* Create a bouncing MNIST dataset.
+* Implement a ConvGRU to predict video sequence.
+* [Example Repo](https://github.com/aserdega/convlstmgru)

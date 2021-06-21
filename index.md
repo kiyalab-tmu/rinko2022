@@ -311,8 +311,8 @@ VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.
 * You might want to plot perplexity vs epochs.
 
 
-### Q.6 ConvGRU
-* Explore ConvGRU. [Reference](https://arxiv.org/pdf/1511.06432.pdf)
-* Create a bouncing MNIST dataset.
-* Implement a ConvGRU to predict video sequence.
-* [Example Repo](https://github.com/aserdega/convlstmgru)
+<!-- ### Q.6 ConvGRU -->
+<!-- * Explore ConvGRU. [Reference](https://arxiv.org/pdf/1511.06432.pdf) -->
+<!-- * Create a bouncing MNIST dataset. -->
+<!-- * Implement a ConvGRU to predict video sequence. -->
+<!-- * [Example Repo](https://github.com/aserdega/convlstmgru) -->

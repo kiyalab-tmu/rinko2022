@@ -330,12 +330,12 @@ VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.
 * Train the VAE by using MNIST dataset.
 * Visualize the results.
 
-### Q.2 Generative Adversarial Networks (GAN)
+### Q.3 Generative Adversarial Networks (GAN)
 * Explain GAN
 * Implement a basic GAN without any convolution by using MNIST.
 * Visualize the results.
 
-### Q.2 Deep Convolutional GAN (DCGAN)
+### Q.4 Deep Convolutional GAN (DCGAN)
 Main features of [DCGAN](https://arxiv.org/abs/1511.06434) are:
 * Use convolution without using any pooling layer.
 * Use batchnorm in both generator and discriminator.

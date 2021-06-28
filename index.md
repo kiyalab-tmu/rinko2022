@@ -325,13 +325,13 @@ VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.
 
 ### Q.2 Variational Autoencoders (VAE)
 * Note that VAE and AE are different.
-* Explain the differnece.
+* Explain the difference.
 * Implement a VAE.
 * Train the VAE by using MNIST dataset.
 * Visualize the results.
 
 ### Q.3 Generative Adversarial Networks (GAN)
-* Explain GAN
+* Explain GAN.
 * Implement a basic GAN without any convolution by using MNIST.
 * Visualize the results.
 
@@ -341,7 +341,7 @@ Main features of [DCGAN](https://arxiv.org/abs/1511.06434) are:
 * Use batchnorm in both generator and discriminator.
 * Don't use fully connected hidden layers.
 * Use ReLU activation in the generator of all layers except the output (which
-  uses Tanh)
+  uses Tanh).
 * Use LeakyReLU activation in the discrimination of all layers except the output
   (which does not use an activation).
 * Implement a DCGAN.

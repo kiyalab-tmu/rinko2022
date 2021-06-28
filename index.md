@@ -316,3 +316,34 @@ VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.
 <!-- * Create a bouncing MNIST dataset. -->
 <!-- * Implement a ConvGRU to predict video sequence. -->
 <!-- * [Example Repo](https://github.com/aserdega/convlstmgru) -->
+# Chapter 6: Generative Models
+### Q.1 Autoencoders
+* Explain what an autoencoder is.
+* Impelemnt an autoencoder.
+* Train the autoencoder by using MNIST dataset.
+* Visualize the results.
+
+### Q.2 Varional Autoencoders (VAE)
+* Note that VAE and AE are different.
+* Explain the differnece.
+* Implement a VAE.
+* Train the VAE by using MNIST dataset.
+* Visualize the results.
+
+### Q.2 Generative Adversarial Networks (GAN)
+* Explain GAN
+* Implement a basic GAN without any convolution by using MNIST.
+* Visualize the results.
+
+### Q.2 Deep Convolutional GAN (DCGAN)
+Main features of [DCGAN](https://arxiv.org/abs/1511.06434) are:
+* Use convolution without using any pooling layer.
+* Use batchnorm in both generator and discriminator.
+* Don't use fully connected hidden layers.
+* Use ReLU activation in the generator of all layers except the output (which
+  uses Tanh)
+* Use LeakyReLU activation in the discrimination of all layers except the output
+  (which does not use an activation).
+* Implement a DCGAN.
+* Train DCGAN by using MNIST dataset.
+* Visualize the results.

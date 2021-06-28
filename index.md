@@ -319,7 +319,7 @@ VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.
 # Chapter 6: Generative Models
 ### Q.1 Autoencoders
 * Explain what an autoencoder is.
-* Impelemnt an autoencoder.
+* Impelement an autoencoder.
 * Train the autoencoder by using MNIST dataset.
 * Visualize the results.
 

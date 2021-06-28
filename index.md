@@ -323,7 +323,7 @@ VGG implements the idea of using blocks. [Reference](https://arxiv.org/abs/1409.
 * Train the autoencoder by using MNIST dataset.
 * Visualize the results.
 
-### Q.2 Varional Autoencoders (VAE)
+### Q.2 Variational Autoencoders (VAE)
 * Note that VAE and AE are different.
 * Explain the differnece.
 * Implement a VAE.

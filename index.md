@@ -8,6 +8,8 @@ layout: default
 * [Chapter 4: Convolutional Neural Networks](#chapter-4-convolutional-neural-networks)
 * [Chapter 5: Recurrent Neural Networks](#chapter-5-recurrent-neural-networks)
 * [Chapter 6: Generative Models](#chapter-6-generative-models)
+* [Chapter 7: Attention Mechanisms](#chapter-7-attention-mechanisms)
+* [Chapter 8: Adversarial Attacks](#chapter-8-adversarial-attacks)
 
 # Chapter 1: Basics
 ### The following 5 questions are just to warm you up in programming with Python.
@@ -347,3 +349,25 @@ Main features of [DCGAN](https://arxiv.org/abs/1511.06434) are:
 * Implement a DCGAN.
 * Train DCGAN by using MNIST dataset.
 * Visualize the results.
+
+
+### Q.5 Wasserstein GAN (WGAN)
+
+### Q.6 Conditional GAN
+
+### Q.7 Cycle GAN
+
+# Chapter 7: Attention Mechanisms
+
+### Q.1 Attention Pooling
+### Q.2 Attention Scoring Functions
+### Q.3 Bahadanau Attention
+### Q.4 Multi-Head Attention
+### Q.5 Self Attention and Positional Encoding
+### Q.6 Transformer
+### Q.7 Vision Transformer
+
+# Chapter 8: Adversarial Attacks
+### Q.1 Fast Gradient Sign Method (FGSM)
+### Q.2 Adversarial Patches
+### Q.3 Perturbation for Semantic Segmentation

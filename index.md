@@ -367,7 +367,9 @@ Main features of [DCGAN](https://arxiv.org/abs/1511.06434) are:
 ### Q.6 Transformer
 ### Q.7 Vision Transformer
 
-# Chapter 8: Adversarial Attacks
-### Q.1 Fast Gradient Sign Method (FGSM)
-### Q.2 Adversarial Patches
-### Q.3 Perturbation for Semantic Segmentation
+# Chapter 8: Self-supervised Learning
+### Q.1 What is self-supervised learning?
+* Semi-supervised learning
+* Difference from unsupervised learning
+### Q.2 Self-supervised contrastive learning
+### Q.3 Word2Vec

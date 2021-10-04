@@ -371,5 +371,6 @@ Main features of [DCGAN](https://arxiv.org/abs/1511.06434) are:
 ### Q.1 What is self-supervised learning?
 * Semi-supervised learning
 * Difference from unsupervised learning
+
 ### Q.2 Self-supervised contrastive learning
 ### Q.3 Word2Vec

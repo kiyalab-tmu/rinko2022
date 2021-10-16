@@ -9,7 +9,7 @@ layout: default
 * [Chapter 5: Recurrent Neural Networks](#chapter-5-recurrent-neural-networks)
 * [Chapter 6: Generative Models](#chapter-6-generative-models)
 * [Chapter 7: Attention Mechanisms](#chapter-7-attention-mechanisms)
-* [Chapter 8: Adversarial Attacks](#chapter-8-adversarial-attacks)
+* [Chapter 8: Self-Supervised Learning](#chapter-8-self-supervised-learning)
 
 # Chapter 1: Basics
 ### The following 5 questions are just to warm you up in programming with Python.
@@ -352,6 +352,12 @@ Main features of [DCGAN](https://arxiv.org/abs/1511.06434) are:
 
 
 ### Q.5 Wasserstein GAN (WGAN)
+Reference Paper: [WGAN](https://arxiv.org/abs/1701.07875)
+* What is mode collapse?
+* Problem with BCE loss
+* Wasserstein loss
+* Conditions of Wasserstein's critic and 1-Lipschitz continuity enforcement
+* Implement WGAN and train it on MNIST or other datasets.
 
 ### Q.6 Conditional GAN
 
@@ -369,7 +375,7 @@ Main features of [DCGAN](https://arxiv.org/abs/1511.06434) are:
 
 # Chapter 8: Self-supervised Learning
 ### Q.1 What is self-supervised learning?
-* Semi-supervised learning
+* Semi-supervised learning, [useful link](https://ai.stackexchange.com/questions/12266/what-is-the-relation-between-semi-supervised-and-self-supervised-visual-represen)
 * Difference from unsupervised learning
 
 ### Q.2 Self-supervised contrastive learning

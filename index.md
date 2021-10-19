@@ -357,7 +357,7 @@ Reference Paper: [WGAN](https://arxiv.org/abs/1701.07875)
 * Problem with BCE loss
 * Wasserstein loss
 * Conditions of Wasserstein's critic and 1-Lipschitz continuity enforcement
-* Implement WGAN and train it on MNIST or other datasets.
+* Implement WGAN and train it on CIFAR-10 dataset.
 
 ### Q.6 Conditional GAN
 

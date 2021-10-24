@@ -360,6 +360,17 @@ Reference Paper: [WGAN](https://arxiv.org/abs/1701.07875)
 * Implement WGAN and train it on MNIST and CIFAR-10 datasets.
 
 ### Q.6 Conditional GAN
+Reference Paper: [Conditional GAN](https://arxiv.org/abs/1411.1784)
+* What is the difference between conditional and uncondionalt GAN?
+* How conditional GAN works? (You can refer to the paper)
+* Implement conditional GAN on MNIST and CIFAR-10 dataset (or use cat dataset).
+* What is controllable generation?
+* What is the difference between conditional and controllable generation?
+* Implement a controllable generation method (classifier gradient).
+	* Train a classifier for a certain feature (e.g., binary classifier with/without classes)
+	* Use that pretrained classifier to change the z vector (run gradient ascent).
+* What is z-space disentanglement?
+* Find out methods for z-space disentanglement.
 
 ### Q.7 Cycle GAN
 

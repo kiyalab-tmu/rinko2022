@@ -366,13 +366,20 @@ Reference Paper: [Conditional GAN](https://arxiv.org/abs/1411.1784)
 * Implement conditional GAN on MNIST and CIFAR-10 dataset (or use cat dataset).
 * What is controllable generation?
 * What is the difference between conditional and controllable generation?
+
+In the following task, you need to train a GAN with CelebaA dataset. Then use
+that GAN for controllable generation as follows.
+[Here](https://yonigottesman.github.io/2020/11/17/wgan-controllable-generation.html/) is an example of controllable generation with a pre-trained classifier.
 * Implement a controllable generation method (classifier gradient).
-	* Train a classifier for a certain feature (e.g., binary classifier with/without classes)
+	* Train a unconditional GAN with [CelebaA dataset](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+	* Train a classifier for a certain feature (e.g., binary classifier with/without eyeglasses)
 	* Use that pretrained classifier to change the z vector (run gradient ascent).
 * What is z-space disentanglement?
 * Find out methods for z-space disentanglement.
 
 ### Q.7 Cycle GAN
+
+### Q.8 GAN Evaluation
 
 # Chapter 7: Attention Mechanisms
 

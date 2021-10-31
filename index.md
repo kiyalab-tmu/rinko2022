@@ -378,6 +378,13 @@ that GAN for controllable generation as follows.
 * Find out methods for z-space disentanglement.
 
 ### Q.7 Cycle GAN
+Reference Paper: [Cycle GAN](https://arxiv.org/abs/1703.10593)
+* What is unpaired image-to-image translation?
+* Overview of Cycle GAN (Two GANs)
+* Explain different losses (Cycle consistency loss, least square loss, identity
+  loss)
+* Implement a Cycle GAN.
+* You can try any dataset from [here](https://people.eecs.berkeley.edu/%7Etaesung_park/CycleGAN/datasets/).
 
 ### Q.8 GAN Evaluation
 

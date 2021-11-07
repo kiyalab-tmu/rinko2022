@@ -391,7 +391,7 @@ Explore metrics for evaluating GANs.
 * Inception Score (IS): [Ref](https://arxiv.org/abs/1606.03498)
 * Fr\'echet inception distance (FID) [Ref](https://arxiv.org/abs/1706.08500)
 * Kernel inception distance (KID) [Ref](https://arxiv.org/abs/1801.01401)
-Evaluate your previously trained GAN with CIFAR-10 with the above metrics.
+Explain how they works and evaluate your previously trained GAN with CIFAR-10 with the above metrics.
 
 # Chapter 7: Attention Mechanisms
 

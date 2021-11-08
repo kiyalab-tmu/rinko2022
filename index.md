@@ -387,10 +387,13 @@ Reference Paper: [Cycle GAN](https://arxiv.org/abs/1703.10593)
 * You can try any dataset from [here](https://people.eecs.berkeley.edu/%7Etaesung_park/CycleGAN/datasets/).
 
 ### Q.8 GAN Evaluation
-Explore metrics for evaluating GANs.
+Explain how to evaluate GANs.
+
+Explore the following metrics for evaluating GANs.
 * Inception Score (IS): [Ref](https://arxiv.org/abs/1606.03498)
 * Fr\'echet inception distance (FID) [Ref](https://arxiv.org/abs/1706.08500)
 * Kernel inception distance (KID) [Ref](https://arxiv.org/abs/1801.01401)
+
 Explain how they works and evaluate your previously trained GAN with CIFAR-10 with the above metrics.
 
 # Chapter 7: Attention Mechanisms

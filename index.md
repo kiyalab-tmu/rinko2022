@@ -406,11 +406,13 @@ Explain how they works and evaluate your previously trained GAN with CIFAR-10 wi
 * Implement average pooling.
 * Implement a non-parametric attention pooling (Nadaraya-Watson kernel regression).
 * Implement a parametric attention pooling.
+
 [Reference code and example](https://d2l.ai/chapter_attention-mechanisms/nadaraya-watson.html)
 
 ### Q.2 Attention Scoring Functions
 * Explain additive attention scoring function with a toy example.
 * Explain scaled dot-product scoring function with a toy example.
+
 [Reference code and example](https://d2l.ai/chapter_attention-mechanisms/attention-scoring-functions.html)
 
 ### Q.3 Bahadanau Attention
@@ -418,17 +420,20 @@ To understand this attention mechanism, we need to consider a language translati
 problem (encoder-decoder architecture).
 * Implement an RNN with Bahadanau attention
 * Dataset : [French-English](http://d2l-data.s3-accelerate.amazonaws.com/fra-eng.zip)
+
 [Reference code and example](https://d2l.ai/chapter_attention-mechanisms/bahdanau-attention.html)
 
 ### Q.4 Multi-Head Attention
 * Why do we need multi-head attention instead of single attention pooling?
 * Implement a multi-head attention with a toy example.
 * Verify the output tensor shape.
+
 [Reference code and example](https://d2l.ai/chapter_attention-mechanisms/multihead-attention.html)
 
 ### Q.5 Self Attention and Positional Encoding
 * Explain self attention with an example.
 * Explain positional encoding with an example.
+
 [Reference code and example](https://d2l.ai/chapter_attention-mechanisms/self-attention-and-positional-encoding.html)
 
 
@@ -436,6 +441,7 @@ problem (encoder-decoder architecture).
 * Explain overview of the transformer model.
 * Implement a transformer
 * Train it with the previous French-English dataset.
+
 [Reference code and example](https://d2l.ai/chapter_attention-mechanisms/transformer.html)
 
 ### Q.7 Vision Transformer

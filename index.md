@@ -397,19 +397,57 @@ Explore the following metrics for evaluating GANs.
 Explain how they works and evaluate your previously trained GAN with CIFAR-10 with the above metrics.
 
 # Chapter 7: Attention Mechanisms
-
 ### Q.1 Attention Pooling
+* Explain what attention mechanism is.
+* Why attention mechanism is different from fully connected layer or pooling
+  layer?
+* Consider a function $$y_i = 2 sin(x_i) + x_i^{0.8} + \epsilon$$. Generate
+  a synthetic dataset for 50 examples.
+* Implement average pooling.
+* Implement a non-parametric attention pooling (Nadaraya-Watson kernel regression).
+* Implement a parametric attention pooling.
+[Reference code and example](https://d2l.ai/chapter_attention-mechanisms/nadaraya-watson.html)
+
 ### Q.2 Attention Scoring Functions
+* Explain additive attention scoring function with a toy example.
+* Explain scaled dot-product scoring function with a toy example.
+[Reference code and example](https://d2l.ai/chapter_attention-mechanisms/attention-scoring-functions.html)
+
 ### Q.3 Bahadanau Attention
+To understand this attention mechanism, we need to consider a language translation
+problem (encoder-decoder architecture).
+* Implement an RNN with Bahadanau attention
+* Dataset : [French-English](http://d2l-data.s3-accelerate.amazonaws.com/fra-eng.zip)
+[Reference code and example](https://d2l.ai/chapter_attention-mechanisms/bahdanau-attention.html)
+
 ### Q.4 Multi-Head Attention
+* Why do we need multi-head attention instead of single attention pooling?
+* Implement a multi-head attention with a toy example.
+* Verify the output tensor shape.
+[Reference code and example](https://d2l.ai/chapter_attention-mechanisms/multihead-attention.html)
+
 ### Q.5 Self Attention and Positional Encoding
+* Explain self attention with an example.
+* Explain positional encoding with an example.
+[Reference code and example](https://d2l.ai/chapter_attention-mechanisms/self-attention-and-positional-encoding.html)
+
+
 ### Q.6 Transformer
+* Explain overview of the transformer model.
+* Implement a transformer
+* Train it with the previous French-English dataset.
+[Reference code and example](https://d2l.ai/chapter_attention-mechanisms/transformer.html)
+
 ### Q.7 Vision Transformer
+Reference Paper: [ViT](https://arxiv.org/abs/2010.11929)
+* Explain overview of ViT.
+* Implent a ViT.
+* Train it with CIFAR-10 without using pre-trained weights.
+
 
 # Chapter 8: Self-supervised Learning
 ### Q.1 What is self-supervised learning?
 * Semi-supervised learning, [useful link](https://ai.stackexchange.com/questions/12266/what-is-the-relation-between-semi-supervised-and-self-supervised-visual-represen)
 * Difference from unsupervised learning
-
 ### Q.2 Self-supervised contrastive learning
 ### Q.3 Word2Vec

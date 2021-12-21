@@ -9,7 +9,7 @@ layout: default
 * [Chapter 5: Recurrent Neural Networks](#chapter-5-recurrent-neural-networks)
 * [Chapter 6: Generative Models](#chapter-6-generative-models)
 * [Chapter 7: Attention Mechanisms](#chapter-7-attention-mechanisms)
-* [Chapter 8: Self-Supervised Learning](#chapter-8-self-supervised-learning)
+<!-- * [Chapter 8: Self-Supervised Learning](#chapter-8-self-supervised-learning) -->
 
 # Chapter 1: Basics
 ### The following 5 questions are just to warm you up in programming with Python.
@@ -451,9 +451,9 @@ Reference Paper: [ViT](https://arxiv.org/abs/2010.11929)
 * Train it with CIFAR-10 without using pre-trained weights.
 
 
-# Chapter 8: Self-supervised Learning
-### Q.1 What is self-supervised learning?
-* Semi-supervised learning, [useful link](https://ai.stackexchange.com/questions/12266/what-is-the-relation-between-semi-supervised-and-self-supervised-visual-represen)
-* Difference from unsupervised learning
-### Q.2 Self-supervised contrastive learning
-### Q.3 Word2Vec
+<!-- # Chapter 8: Self-supervised Learning -->
+<!-- ### Q.1 What is self-supervised learning? -->
+<!-- * Semi-supervised learning, [useful link](https://ai.stackexchange.com/questions/12266/what-is-the-relation-between-semi-supervised-and-self-supervised-visual-represen) -->
+<!-- * Difference from unsupervised learning -->
+<!-- ### Q.2 Self-supervised contrastive learning -->
+<!-- ### Q.3 Word2Vec -->

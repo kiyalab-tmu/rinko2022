@@ -13,25 +13,32 @@ layout: default
 
 # Chapter 1: Image Processing and Visualization 
 
-### Q.1: Image display
-Load an image using cv2.imread and show it. (ノック61)
-### Q.2: Content of image data
-Check out the shape of an image and pixel values in the blue channel. (ノック62)
-### Q.3: Image cropping
-Crop an image between (700,300) and (1200,800). (ノック63)
-### Q.4: Color histogram visualization
-Visualize the color histogram of an image using cv2.calcHist. (ノック64)
-### Q.5: Image display using RGB transform
-Change the channel order from RGB -> BGR using cv2.cvtColor. (ノック65)
+### Q.1: Image display (ノック61)
+Load an image using cv2.imread and show it. 
+### Q.2: Content of image data (ノック62)
+Check out the shape of an image and pixel values in the blue channel. 
+### Q.3: Image cropping (ノック63)
+Crop an image between (700,300) and (1200,800). 
+### Q.4: Color histogram visualization (ノック64)
+Visualize the color histogram of an image using cv2.calcHist. 
+### Q.5: Image display using RGB transform (ノック65)
+Change the channel order from RGB -> BGR using cv2.cvtColor. 
 ### Q.5a: Image display using RGB transform
 1. Take a photo using your smartphone.
 2. Implement color scrambling algorithm.
 3. Apply color scrambling to your photo.
-### Q.6: Image resizing
+### Q.6: Image resizing (ノック66)
 * Upsample and downsample an image.
 * Try various kernels and compare the results.
-### Q.7: Image rotation
+### Q.7: Image rotation (ノック67)
 * Rotate an image.
-### Q.8: Image processing
-### Q.9: Drawing line or text in image
-### Q.10: Image save
+* Flip an image (both horizontal and vertical).
+### Q.8: Image processing (ノック68)
+* Convert a color image to a grayscale one.
+* Binarize an image.
+* Apply a smoothing filter to an image (use cv2.bulr).
+### Q.9: Drawing line or text in image (ノック69)
+* Draw a text on an image.
+* Draw a rectangle on an image.
+### Q.10: Image save (ノック70)
+

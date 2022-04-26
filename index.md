@@ -13,6 +13,13 @@ layout: default
 
 # Chapter 1: Image Processing and Visualization 
 
-### Q.1: Load and show image
-### Q.2: 
-### Q.3: 
+### Q.1: Image display
+### Q.2: Content of image data
+### Q.3: Image cropping 
+### Q.4: Color histogram visualization
+### Q.5: Image display using RGB transform
+### Q.6: Image resizing
+### Q.7: Image rotation
+### Q.8: Image processing
+### Q.9: Drawing line or text in image
+### Q.10: Image save

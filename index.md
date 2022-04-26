@@ -2,7 +2,8 @@
 layout: default
 ---
 # Table of Contents
-* [Chapter 1: Image Processing and Visualization](#chapter-1-image-processing-and-visualization )
+* [Chapter 1: Image Processing and Visualization (pp.224-256)](#chapter-1-image-processing-and-visualization)
+* [Chapter 2: Audio Processing and Visualization](#chapter-2-audio-processing-and-visualization)
 
 # Textbook 
 * [Python 実践 データ加工/可視化](https://www.shuwasystem.co.jp/book/9784798064390.html)
@@ -46,3 +47,5 @@ Change the channel order from RGB -> BGR using cv2.cvtColor.
 1. Take a photo using your smartphone.
 2. Implement block scrambling.
 3. Apply block scrambling to your photo.
+
+# Chapter 2: Audio Processing and Visualization 

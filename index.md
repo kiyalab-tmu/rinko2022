@@ -23,26 +23,26 @@ Crop an image between (700,300) and (1200,800).
 Visualize the color histogram of an image using cv2.calcHist. 
 ### Q.5: Image display using RGB transform (ノック65)
 Change the channel order from RGB -> BGR using cv2.cvtColor. 
-### Q.5a: Image display using RGB transform
+### Q.6: Image display using RGB transform
 1. Take a photo using your smartphone.
 2. Implement color scrambling.
 3. Apply color scrambling to your photo.
-### Q.6: Image resizing (ノック66)
+### Q.7: Image resizing (ノック66)
 * Upsample and downsample an image.
 * Try various kernels and compare the results.
-### Q.7: Image rotation (ノック67)
+### Q.8: Image rotation (ノック67)
 * Rotate an image.
 * Flip an image (both horizontal and vertical).
-### Q.8: Image processing (ノック68)
+### Q.9: Image processing (ノック68)
 * Convert a color image to a grayscale one.
 * Binarize an image.
 * Apply a smoothing filter to an image (use cv2.bulr).
-### Q.9: Drawing line or text in image (ノック69)
+### Q.10: Drawing line or text in image (ノック69)
 * Draw a text on an image.
 * Draw a rectangle on an image.
-### Q.10: Image save (ノック70)
+### Q.11: Image save (ノック70)
 * Save an image using cv2.imwrite
-### Q.11: Block scrambling
+### Q.12: Block scrambling
 1. Take a photo using your smartphone.
 2. Implement block scrambling.
 3. Apply block scrambling to your photo.

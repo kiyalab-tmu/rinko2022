@@ -29,34 +29,43 @@ Visualize the color histogram of an image using cv2.calcHist.
 ### Q.5: RGB transformation (ノック65)
 Change the channel order from RGB -> BGR using cv2.cvtColor. 
 
-### Q.6: Color scrambling
+### Q.6: Image data type
+Considering making a dim image, I wrote the following script. 
+```
+img_dim = img_rgb * 0.5
+plt.imshow(img_dim)
+```
+However, the result seems strange.
+Your mission is to modifiy the script to get a desired result.
+
+### Q.7: Color scrambling
 1. Take a photo using your smartphone.
 2. Implement color scrambling.
 3. Apply color scrambling to your photo.
 
 <img src="figs/color_scrambling.png" width="384">
 
-### Q.7: Image resizing (ノック66)
+### Q.8: Image resizing (ノック66)
 * Upsample and downsample an image.
 * Try various kernels and compare the results.
 
-### Q.8: Image rotation (ノック67)
+### Q.9: Image rotation (ノック67)
 * Rotate an image.
 * Flip an image (both horizontal and vertical).
 
-### Q.9: Image processing (ノック68)
+### Q.10: Image processing (ノック68)
 * Convert a color image to a grayscale one.
 * Binarize an image.
 * Apply a smoothing filter to an image (use cv2.bulr).
 
-### Q.10: Drawing line or text in image (ノック69)
+### Q.11: Drawing line or text in image (ノック69)
 * Draw a text on an image.
 * Draw a rectangle on an image.
 
-### Q.11: Image save (ノック70)
+### Q.12: Image save (ノック70)
 * Save an image using cv2.imwrite
 
-### Q.12: Block scrambling
+### Q.13: Block scrambling
 1. Take a photo using your smartphone.
 2. Implement block scrambling.
 3. Apply block scrambling to your photo.

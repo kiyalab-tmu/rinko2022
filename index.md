@@ -35,8 +35,10 @@ Considering making a dim image, I wrote the following script.
 img_dim = img_rgb * 0.5
 plt.imshow(img_dim)
 ```
-However, the result seems strange.
-Your mission is to modifiy the script to get a desired result.
+However, the result seems strange:</br>
+<img src="figs/wrong_dim.png" width="384"></br>
+Your mission is to modifiy the script to get a desired result.</br>
+<img src="figs/correct_dim.png" width="384">
 
 ### Q.7: Color scrambling
 1. Take a photo using your smartphone.

@@ -17,7 +17,7 @@ layout: default
 ### Q.1: Image display (ノック61)
 Load an image using cv2.imread and show it. 
 
-### Q.2: Content of image data (ノック62)
+### Q.2: Contents of image data (ノック62)
 Check out the shape of an image and pixel values in the blue channel. 
 
 ### Q.3: Image cropping (ノック63)
@@ -26,7 +26,7 @@ Crop an image between (700,300) and (1200,800).
 ### Q.4: Color histogram visualization (ノック64)
 Visualize the color histogram of an image using cv2.calcHist. 
 
-### Q.5: Image display using RGB transform (ノック65)
+### Q.5: RGB transformation (ノック65)
 Change the channel order from RGB -> BGR using cv2.cvtColor. 
 
 ### Q.6: Color scrambling

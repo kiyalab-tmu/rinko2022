@@ -29,7 +29,7 @@ Visualize the color histogram of an image using cv2.calcHist.
 ### Q.5: Image display using RGB transform (ノック65)
 Change the channel order from RGB -> BGR using cv2.cvtColor. 
 
-### Q.6: Image display using RGB transform
+### Q.6: Color scrambling
 1. Take a photo using your smartphone.
 2. Implement color scrambling.
 3. Apply color scrambling to your photo.

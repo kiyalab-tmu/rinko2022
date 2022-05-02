@@ -34,6 +34,8 @@ Change the channel order from RGB -> BGR using cv2.cvtColor.
 2. Implement color scrambling.
 3. Apply color scrambling to your photo.
 
+<img src="figs/color_scrambling.png" width="384">
+
 ### Q.7: Image resizing (ノック66)
 * Upsample and downsample an image.
 * Try various kernels and compare the results.
@@ -58,5 +60,7 @@ Change the channel order from RGB -> BGR using cv2.cvtColor.
 1. Take a photo using your smartphone.
 2. Implement block scrambling.
 3. Apply block scrambling to your photo.
+
+<img src="figs/block_scrambling.png" width="384">
 
 # Chapter 2: Audio Processing and Visualization 

@@ -37,7 +37,7 @@ plt.imshow(img_dim)
 ```
 However, the result seems strange:</br>
 <img src="figs/wrong_dim.png" width="384"></br>
-Please figure out why the problem has been occurred, and modifiy the script to achieve a desired result:</br>
+Please figure out why the problem has occurred, and modify the script to achieve the desired result:</br>
 <img src="figs/correct_dim.png" width="384">
 
 ### Q.7: Color scrambling

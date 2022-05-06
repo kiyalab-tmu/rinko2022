@@ -35,9 +35,12 @@ The following script was written to make an image underexposed.
 img_dim = img_rgb * 0.5
 plt.imshow(img_dim)
 ```
-However, the result seems strange:</br>
-<img src="figs/wrong_dim.png" width="384"></br>
-Please figure out why the problem has occurred, and modify the script to achieve the desired result:</br>
+However, the result seems strange:
+
+<img src="figs/wrong_dim.png" width="384">
+
+Please figure out why the problem has occurred, and modify the script to achieve the desired result:
+
 <img src="figs/correct_dim.png" width="384">
 
 ### Q.7: Color scrambling

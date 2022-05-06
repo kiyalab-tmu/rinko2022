@@ -43,7 +43,7 @@ Please figure out why the problem has occurred, and modify the script to achieve
 ### Q.7: Color scrambling
 1. Take a photo using your smartphone.
 2. Implement color scrambling.
-3. Apply color scrambling to your photo.
+3. Apply color scrambling to the photo.
 
 <img src="figs/color_scrambling.png" width="384">
 

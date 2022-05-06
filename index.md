@@ -30,14 +30,14 @@ Visualize the color histogram of an image using cv2.calcHist.
 Change the channel order from RGB -> BGR using cv2.cvtColor. 
 
 ### Q.6: Image data type
-Considering making a dim image, I wrote the following script. 
+The following script was written to make an image underexposed. 
 ```
 img_dim = img_rgb * 0.5
 plt.imshow(img_dim)
 ```
 However, the result seems strange:</br>
 <img src="figs/wrong_dim.png" width="384"></br>
-Your mission is to modifiy the script to get a desired result.</br>
+Please figure out why the problem has been occurred, and modifiy the script to achieve a desired result:</br>
 <img src="figs/correct_dim.png" width="384">
 
 ### Q.7: Color scrambling

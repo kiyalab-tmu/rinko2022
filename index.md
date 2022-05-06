@@ -6,8 +6,7 @@ layout: default
 * [Chapter 2: Audio Processing and Visualization](#chapter-2-audio-processing-and-visualization)
 
 # Textbook 
-* [Python 実践 データ加工/可視化](https://www.shuwasystem.co.jp/book/9784798064390.html)
-* [Attachments](https://www.shuwasystem.co.jp/support/7980html/6439.html)
+* 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
 
 # GitHub Repo
 * [2022-sem1-rinko](https://github.com/kiyalab-tmu/2022-sem1-rinko)

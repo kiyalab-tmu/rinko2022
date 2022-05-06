@@ -76,7 +76,7 @@ Please figure out why the problem has occurred, and modify the script to achieve
 
 ### Q.14: Fast color space transform
 * Load an RGB image and transform its color space to YCbCr.
-* **Processing time limitation is 4 second.**
+* **Processing time limitation is within 4 second.**
 * Color space transform equations are
 ```
 Y  =  0.29900 * R +  0.58700 * G +  0.11400 * B

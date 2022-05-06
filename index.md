@@ -76,13 +76,13 @@ Please figure out why the problem has occurred, and modify the script to achieve
 
 ### Q.14: Fast color space transform
 * Load an RGB image and transform its color space to YCbCr.
-* Processing time limitation is 4 second.
-* Color space transform matrix is
+* **Processing time limitation is 4 second.**
+* Color space transform equations are
 ```
 Y  =  0.29900 * R +  0.58700 * G +  0.11400 * B
 Cb = -0.16874 * R + -0.33126 * G +  0.50000 * B
 Cr =  0.50000 * R + -0.41869 * G + -0.08100 * B
 ```
-* TIPS: Matrix multiplication would be helpful.
+* TIPS: np.reshape and matrix multiplication would be helpful.
 
 # Chapter 2: Audio Processing and Visualization 

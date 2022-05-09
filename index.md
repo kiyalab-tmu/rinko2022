@@ -46,6 +46,7 @@ Please figure out why the problem has occurred, and modify the script to achieve
 1. Take a photo using your smartphone.
 2. Implement color scrambling.
 3. Apply color scrambling to the photo.
+* Any block size can be used.
 
 <img src="figs/color_scrambling.png" width="384">
 

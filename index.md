@@ -88,4 +88,10 @@ Cr =  0.50000 * R + -0.41869 * G + -0.08100 * B
 ```
 * TIPS: np.reshape and matrix multiplication would be helpful.
 
-# Chapter 2: Audio Processing and Visualization 
+# Chapter 2: Audio Processing and Visualization
+
+* 
+
+### Q.1 音データを再生してみよう
+* サンプル音声を再生してください
+* vscode+jupyter環境では再生できないので注意してください

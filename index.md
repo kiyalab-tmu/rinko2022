@@ -142,4 +142,4 @@ Cr =  0.50000 * R + -0.41869 * G + -0.08100 * B
 
 ### Q.12 音データを変換してみよう
 
-# Chapter 3: Pre-processing for Machine Learning
+# Chapter 3: Preprocessing for Machine Learning

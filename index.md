@@ -52,7 +52,7 @@ Please figure out why the problem has occurred, and modify the script to achieve
 
 ### Q.8: Image resizing (ノック66)
 * Upsample and downsample an image.
-* Try various kernels and compare the results.
+* Try various interpolation methods and compare the results.
 
 ### Q.9: Image rotation (ノック67)
 * Rotate an image.

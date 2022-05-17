@@ -90,7 +90,8 @@ Cr =  0.50000 * R + -0.41869 * G + -0.08100 * B
 
 # Chapter 2: Audio Processing and Visualization
 
-* 
+* HOMEに課題を解くための雛形をアップロードしましたので`git checkout main`よりファイルをコピーしてください
+* 必ず`git checkout 自分のブランチ名`より、自分のブランチに戻ってください
 
 ### Q.1 音データを再生してみよう
 * サンプル音声を再生してください

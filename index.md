@@ -160,7 +160,7 @@ Cr =  0.50000 * R + -0.41869 * G + -0.08100 * B
 ### Q.11 音データを変換してみよう
 * VTLNとClippingについて説明してください
 * "音声.mp3"を読み込みましょう
-* sample.wavにVTLNとClippingを施し，音を再生してみましょう
+* "音声.mp3"にVTLNとClippingを施し，音を再生してみましょう
 * VTLNとClippingのパラメータを調節して，結果がどう変わるかを確認してみましょう
 
 # Chapter 3: Preprocessing for Machine Learning

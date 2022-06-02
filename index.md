@@ -5,7 +5,7 @@ layout: default
 * [Chapter 1-1: Image Processing and Visualization (pp.224-256)](#chapter-1-1-image-processing-and-visualization)
 * [Chapter 1-2: Audio Processing and Visualization](#chapter-1-2-audio-processing-and-visualization)
 * [Chapter 1-3: Preprocessing for Machine Learning](#chapter-1-3-preprocessing-for-machine-learning)
-* [Chapter 2-1: Implementation of Fine tuning](#chapter-2-1-implementation-of-fine-tuning)
+* [Chapter 2-1: Image Classification with Transfer Learning and Fine Tuning](#chapter-2-1-image-classification-with-transfer-learning-and-fine-tuning)
 
 # Textbook 
 * 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
@@ -267,4 +267,4 @@ Cr =  0.50000 * R + -0.41869 * G + -0.08100 * B
 * Testモデルに対する精度を評価しましょう
 * **Q.6 追加課題１の精度と比較してみましょう**
 
-# Chapter 2-1: Implementation of Fine tuning 
+# Chapter 2-1: Image Classification with Transfer Learning and Fine Tuning

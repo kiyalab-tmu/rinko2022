@@ -4,6 +4,7 @@ layout: default
 # Table of Contents
 * [Chapter 1: Image Processing and Visualization (pp.224-256)](#chapter-1-image-processing-and-visualization)
 * [Chapter 2: Audio Processing and Visualization](#chapter-2-audio-processing-and-visualization)
+* [Chapter 3: Preprocessing for Machine Learning](#chapter-3-preprocessing-for-machine-learning)
 
 # Textbook 
 * 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)

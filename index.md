@@ -2,9 +2,9 @@
 layout: default
 ---
 # Table of Contents
-* [Chapter 1: Image Processing and Visualization (pp.224-256)](#chapter-1-image-processing-and-visualization)
-* [Chapter 2: Audio Processing and Visualization](#chapter-2-audio-processing-and-visualization)
-* [Chapter 3: Preprocessing for Machine Learning](#chapter-3-preprocessing-for-machine-learning)
+* [Chapter 1-1: Image Processing and Visualization (pp.224-256)](#chapter-1-1-image-processing-and-visualization)
+* [Chapter 1-2: Audio Processing and Visualization](#chapter-1-2-audio-processing-and-visualization)
+* [Chapter 1-3: Preprocessing for Machine Learning](#chapter-1-3-preprocessing-for-machine-learning)
 
 # Textbook 
 * 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
@@ -12,7 +12,7 @@ layout: default
 # GitHub Repo
 * [2022-sem1-rinko](https://github.com/kiyalab-tmu/2022-sem1-rinko)
 
-# Chapter 1: Image Processing and Visualization 
+# Chapter 1-1: Image Processing and Visualization 
 
 ### Q.1: Image display (ノック61)
 Load an image using cv2.imread and show it. 
@@ -89,7 +89,7 @@ Cr =  0.50000 * R + -0.41869 * G + -0.08100 * B
 ```
 * TIPS: np.reshape and matrix multiplication would be helpful.
 
-# Chapter 2: Audio Processing and Visualization
+# Chapter 1-2: Audio Processing and Visualization
 
 * HOMEに課題を解くための雛形をアップロードしましたので下記の手順からダウンロードしてください
 1. `git pull`
@@ -164,7 +164,7 @@ Cr =  0.50000 * R + -0.41869 * G + -0.08100 * B
 * "音声.mp3"にVTLNとClippingを施し，音を再生してみましょう
 * VTLNとClippingのパラメータを調節して，結果がどう変わるかを確認してみましょう
 
-# Chapter 3: Preprocessing for Machine Learning
+# Chapter 1-3: Preprocessing for Machine Learning
 
 * HOMEに課題を解くための雛形をアップロードしましたので下記の手順からダウンロードしてください
 1. `git pull`

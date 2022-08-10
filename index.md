@@ -415,8 +415,27 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 ### Q. 準備
 * MNISTデータセットについて簡単に説明してください
 * 画像生成とは，どのようなタスクであるか説明してください（必要であれば，MNISTデータセットを例にして，画像分類との違いを説明しても良いです）
-* GAN(オリジナル）・DCGANについて調査し，そのモデルの構造を簡単に説明してください
-* 転置畳み込み層について説明してください
+* GAN(オリジナル）・DCGANについて調査し，そのモデルの構造を*簡単に*説明してください
 
-### Q. Generatorの実装
-* DCGANのGeneratorに
+### Q. Generatorのメカニズムと実装
+* DCGANのGeneratorについて説明してください
+* 転置畳み込み層について説明してください
+* Generatorの入力は何ですか？
+* DCGANのGeneratorを実装してみましょう
+* 学習なしでGeneratorから画像を生成し，結果を確認しましょう
+
+### Q. Discriminatorのメカニズムと実装
+* Discriminatorとは何かを説明してください
+* Discriminatorを実装してみましょう
+* 活性化関数であるLeakyReLUについて説明してください
+
+## DCGANの損失関数，学習，生成の実装(p.252~)
+### Q. GANの損失関数
+* DCGANのDiscriminatorの損失関数について説明してください
+* Discriminatorの損失関数を実装してみましょう
+* DCGANのGeneratorの損失関数について説明してください
+* Generatorの損失関数を実装してみましょう
+* DCGANでは，なぜLeakyReLUを活性化関数に利用したのでしょうか？
+
+### Q. DataLoaderの作成
+* MNISTデータセットのDataLoaderを

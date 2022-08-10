@@ -438,4 +438,9 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * DCGANでは，なぜLeakyReLUを活性化関数に利用したのでしょうか？
 
 ### Q. DataLoaderの作成
-* MNISTデータセットのDataLoaderを
+* MNISTデータセットのDataLoaderを実装しましょう（説明は簡単で構いません）
+
+### Q. DCGANの学習
+* DCGANのモデルの初期化を行いましょう
+* Generator・Discriminatorを学習するための関数 train_modelを実装しましょう
+* 生成画像

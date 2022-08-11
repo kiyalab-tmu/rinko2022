@@ -468,3 +468,32 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * 以上の説明を踏まえて，Self-Attentionの概念を今一度まとめてみましょう→p.269（転置畳み込み層にどのような制約がつくのか，大きなカーネルサイズを用いることがなぜ難しいのかなど）
 
 ### Q. 1x1 Convolutions (pointwise convolution)
+* pointwise convolutionの処理について説明してください
+* Self-Attentionを使用する前段階でpointwise convolutionを用いる２つのメリットを説明してください
+
+### Q. Spectral Normalization
+* Spectral Normalizationの概要について説明してください（Batch Normalizationとの違いなど）
+* リプシッツ連続性について説明してください
+
+## Self-Attention GANの学習，生成の実装(p.274~)
+### Q. Self-Attentionモジュールの実装
+* Self-Attentionモジュールを実装してみましょう
+
+### Q. 生成器Generatorrの実装
+* Generatorを実装してみましょう
+* Spectral Normalization・Self-Attentionに重点をおいて説明してください
+
+### Q. 識別器Discriminatorの実装
+* Discriminatorを実装してみましょう
+* 上記と同じく，Spectral Normalization・Self-Attentionに重点をおいて説明してください
+
+### Q. DataLoaderの作成
+* DataLoaderを実装しましょう（前回と同じなので説明は不要）
+
+### Q. ネットワークの初期化と学習の実施
+* Self-Attention GANの損失関数（hinge version of the adversarial loss）について説明してください
+* Generator・Discriminatorを学習するための関数 train_modelを実装しましょう
+* Self-Attention GANのモデルの初期化を行いましょう（説明は不要）
+* 300epochでGenerator・Discriminatorの学習を行ってください（説明は不要）
+* 生成画像と訓練データを並べて表示し，その結果を確認しましょう
+* 生成画像とAttention mapを並べて表示し，その結果を確認しましょう

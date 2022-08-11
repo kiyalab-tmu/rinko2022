@@ -417,37 +417,50 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 ### Q. 準備
 * MNISTデータセットについて簡単に説明してください
 * 画像生成とは，どのようなタスクであるか説明してください（必要であれば，MNISTデータセットを例にして，画像分類との違いを説明しても良いです）
-* GAN(オリジナル）・DCGANについて調査し，そのモデルの構造を*簡単に*説明してください
+* GAN(オリジナル）・DCGANについて調査し，そのモデルの構造を説明してください（両者の違いなど）
 
-### Q. Generatorのメカニズムと実装
-* DCGANのGeneratorについて説明してください
+### Q. Generatorのメカニズム
+* DCGANのGeneratorについて説明してください（モデルの構造など）
 * 転置畳み込み層について説明してください
+
+### Q. Generatorの実装
 * Generatorの入力は何ですか？
+* Batch Normalizationとは何かについて説明してください
 * DCGANのGeneratorを実装してみましょう
 * 学習なしでGeneratorから画像を生成し，結果を確認しましょう
 
-### Q. Discriminatorのメカニズムと実装
-* Discriminatorとは何かを説明してください
+### Q. Discriminatorのメカニズム
+* Discriminatorについて説明してください（モデルの構造，Discriminatorは何を識別するのか，Generatorとの関係性など）
+
+### Q. Discriminatorの実装
 * Discriminatorを実装してみましょう
 * 活性化関数であるLeakyReLUについて説明してください
 
 ## DCGANの損失関数，学習，生成の実装(p.252~)
 ### Q. GANの損失関数
-* DCGANのDiscriminatorの損失関数について説明してください
+* DCGANのDiscriminatorの損失関数について説明してください（テキストの式を解説してください）
 * Discriminatorの損失関数を実装してみましょう
-* DCGANのGeneratorの損失関数について説明してください
+* DCGANのGeneratorの損失関数について説明してください（テキストの式を解説してください）
 * Generatorの損失関数を実装してみましょう
 * DCGANでは，なぜLeakyReLUを活性化関数に利用したのでしょうか？
 ※ 損失関数は，実装のみで，実行はエラーとなりできません（この時点では，入力がないためです）
 
 ### Q. DataLoaderの作成
 * MNISTデータセットのDataLoaderを実装しましょう（説明は簡単で構いません）
+* 今回は，MNISTデータセットの一部のみを使ってGANを学習させる点に注意してください
 
 ### Q. DCGANの学習
 * DCGANのモデルの初期化を行いましょう
 * Generator・Discriminatorを学習するための関数 train_modelを実装しましょう
 * 200epochでGenerator・Discriminatorの学習を行ってください（説明は不要）
 * 生成画像と訓練データを並べて表示し，その結果を確認しましょう
-* GANの欠点について調べましょう
+* GANの欠点について調べましょう（２つ以上）
 * モード崩壊とは何か説明してください
 ※ x.float()でデータの型を修正する必要があるかもしれません
+
+## Self-Attention GANの概要(p.252~)
+### Q. 従来のGANの問題点
+* 転置畳み込み層を用いたGANが持つ問題点について説明してください
+
+### Q. 従来のGANの問題点
+* 転置畳み込み層を用いたGANが持つ問題点について説明してください

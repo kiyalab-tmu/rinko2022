@@ -10,8 +10,8 @@ layout: default
 * [Chapter 2-6: Anomaly Detection with GANs](#chapter-2-6-anomaly-detection-with-gans)
 
 # Textbook 
-* 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
-* 小川雄太郎 著「つくりながら学ぶ！PyTorchによる発展ディープラーニング」（マイナビ出版）
+* Chapter 1: 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
+* Chapter 2: 小川雄太郎 著「つくりながら学ぶ！PyTorchによる発展ディープラーニング」（マイナビ出版）
 
 # GitHub Repo
 * [2022-sem1-rinko](https://github.com/kiyalab-tmu/2022-sem1-rinko)

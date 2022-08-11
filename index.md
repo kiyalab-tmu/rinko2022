@@ -11,6 +11,7 @@ layout: default
 
 # Textbook 
 * 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
+* 小川雄太郎 著「つくりながら学ぶ！PyTorchによる発展ディープラーニング」（マイナビ出版）
 
 # GitHub Repo
 * [2022-sem1-rinko](https://github.com/kiyalab-tmu/2022-sem1-rinko)

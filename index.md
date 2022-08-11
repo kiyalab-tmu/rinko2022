@@ -7,6 +7,7 @@ layout: default
 * [Chapter 1-3: Preprocessing for Machine Learning](#chapter-1-3-preprocessing-for-machine-learning)
 * [Chapter 2-1: Image Classification with Transfer Learning and Fine Tuning](#chapter-2-1-image-classification-with-transfer-learning-and-fine-tuning)
 * [Chapter 2-5: Image Generation with GANs](#chapter-2-5-image-generation-with-gans)
+* [Chapter 2-6: Anomaly Detection with GANs](#chapter-2-6-anomaly-detection-with-gans)
 
 # Textbook 
 * 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
@@ -413,6 +414,7 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * 学習スクリプトを回さない人でも、コーディングとエラーがないかのチェックは行いましょう
 * 下準備として，make_folders_and_data_downloads.ipynbの実行が必要です
 
+<!---
 ## GANによる画像生成のメカニズムとDCGANの実装(p.242~)
 ### Q. 準備
 * MNISTデータセットについて簡単に説明してください
@@ -497,3 +499,18 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * 300epochでGenerator・Discriminatorの学習を行ってください
 * 生成画像と訓練データを並べて表示し，その結果を確認しましょう
 * 生成画像とAttention mapを並べて表示し，その結果を確認しましょう
+--->
+
+# Chapter 2-6: Anomaly Detection with GANs
+* 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください
+* GPUマシンが混雑している場合は、代表者１〜２名のみが学習を行い、その結果をシェアして発表する形式でも構いません（全員がGPUマシンで学習スクリプトを実行&精度を出すことを行わなくても良いです）
+* 学習スクリプトを回さない人でも、コーディングとエラーがないかのチェックは行いましょう
+* 下準備として，make_folders_and_data_downloads.ipynbの実行が必要です
+
+## GANによる異常画像検知のメカニズム(p.290~)
+
+## AnoGANの実装と異常検知の実施(p.294~)
+
+## Efficient GANの概要(p.303~)
+
+## Efficient GANの実装と異常検知の実施(p.311~)

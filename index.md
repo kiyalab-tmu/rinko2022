@@ -452,7 +452,7 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 ### Q. DCGANの学習
 * DCGANのモデルの初期化を行いましょう
 * Generator・Discriminatorを学習するための関数 train_modelを実装しましょう
-* 200epochでGenerator・Discriminatorの学習を行ってください（説明は不要）
+* 200epochでGenerator・Discriminatorの学習を行ってください
 * 生成画像と訓練データを並べて表示し，その結果を確認しましょう
 * GANの欠点について調べましょう（２つ以上）
 * モード崩壊とは何か説明してください
@@ -494,6 +494,6 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * Self-Attention GANの損失関数（hinge version of the adversarial loss）について説明してください
 * Generator・Discriminatorを学習するための関数 train_modelを実装しましょう
 * Self-Attention GANのモデルの初期化を行いましょう（説明は不要）
-* 300epochでGenerator・Discriminatorの学習を行ってください（説明は不要）
+* 300epochでGenerator・Discriminatorの学習を行ってください
 * 生成画像と訓練データを並べて表示し，その結果を確認しましょう
 * 生成画像とAttention mapを並べて表示し，その結果を確認しましょう

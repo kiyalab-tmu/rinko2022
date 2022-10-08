@@ -650,7 +650,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * ClassificationHeadモジュールについて簡単に説明してください(pp.379)
 * 各モジュールを組み合わせて，Transformer（全体）を実装してください
 
-## Transformerの学習・推論，判定根拠の可視化を実装(p.367~)
+## Transformerの学習・推論，判定根拠の可視化を実装(p.382~)
 ### Q. DataLoaderとTransformerモデルの用意
 * DataLoaderとTransformerを実装してください（過去に使用したコードを使い回せます）
 
@@ -664,7 +664,12 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 ### Q. テストデータでの推論と判定根拠の可視化
 * 訓練したTransformerを用いて，テストデータでの正解率を確認しましょう
 
-### Q. Attentionの可視化で
+### Q. Attentionの可視化で判定根拠を探る
+* 説明可能な人工知能（XAI）について簡単に説明してください
+* Attentionの可視化の関数を実装してください（説明は不要）
+* indexを制御して，テストデータミニバッチ中のあるデータに対するAttentionの結果を可視化しましょう
+* 正解できたテストデータ，正解できなかったテストデータをそれぞれ可視化してみましょう
+* 可視化した２つのテストデータについて簡単に分析してみましょう
 
 <!--- ViTについてやる？ --->
 

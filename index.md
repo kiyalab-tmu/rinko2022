@@ -507,7 +507,7 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * GPUマシンが混雑している場合は、代表者１〜２名のみが学習を行い、その結果をシェアして発表する形式でも構いません（全員がGPUマシンで学習スクリプトを実行&精度を出すことを行わなくても良いです）
 * 学習スクリプトを回さない人でも、コーディングとエラーがないかのチェックは行いましょう
 * 下準備として，make_folders_and_data_downloads.ipynbの実行が必要です
-* 必要ライブラリ| janome, torchtext, gensim, spacy
+* 必要ライブラリ| janome, torchtext, gensim, spacy（おそらく不要ですがエラーが出ればインストールをお願いします）
 * バージョン依存の制約がかなり強いため，自分が試して動いたライブラリのバージョンを列挙します（記載以外でライブラリ〇〇のバージョンを知りたいなどの希望があれば連絡ください）
 ```
 gensim                  4.2.0
@@ -573,8 +573,41 @@ zipp                    3.6.0
 ### Q. word2vecの日本語学習済みモデルを使用する実装
 * 注意 | 教科書はMeCabですが，使用しません
 * Janomeを使ったtokenizer_with_preprocessing（p335~の7.2）からコピーしてきましょう（説明は不要）
-* DataLoaderを
+* DataLoaderを以下の通り定義しましょう（説明は不要）
+```
+import torchtext.legacy as torchtext
 
+# tsvやcsvデータを読み込んだときに、読み込んだ内容に対して行う処理を定義します
+# 文章とラベルの両方に用意します
+
+max_length = 25
+TEXT = torchtext.data.Field(sequential=True, tokenize=tokenizer_with_preprocessing,
+                            use_vocab=True, lower=True, include_lengths=True, batch_first=True, fix_length=max_length)
+LABEL = torchtext.data.Field(sequential=False, use_vocab=False)
+
+
+# フォルダ「data」から各tsvファイルを読み込みます
+train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
+    path='./data/', train='text_train.tsv',
+    validation='text_val.tsv', test='text_test.tsv', format='tsv',
+    fields=[('Text', TEXT), ('Label', LABEL)])
+```
+* word2vecを実装し，簡単にコードの説明をしてください
+* 1単語あたりの次元数と，単語数を調べてください
+* ベクトル化したバージョンのボキャブラリーを作成し，結果を表示してみましょう
+* ボキャブラリー単語の順番を確認してください（**この確認は重要です**）
+* `姫 - 女性 + 男性`のベクトルを計算し，`王子`とのベクトルが近くなることを確認しましょう
+* 注意 | **Janomeの使用により，単語のインデックスが教科書のものとずれていますので，インデックスを確認して修正してください**
+* `王子`以外にも，`女王`，`王`，`機械学習`のベクトルと比較しましょう
+
+### Q. fastTextの日本語学習済みモデルを使用する実装
+* fastTextを実装し，簡単にコードの説明をしてください
+* 1単語あたりの次元数と，単語数を調べてください
+* ベクトル化したバージョンのボキャブラリーを作成し，結果を表示してみましょう
+* ボキャブラリー単語の順番を確認してください（**この確認は重要です**）
+* `姫 - 女性 + 男性`のベクトルを計算し，`王子`とのベクトルが近くなることを確認しましょう
+* 注意 | **Janomeの使用により，単語のインデックスが教科書のものとずれていますので，インデックスを確認して修正してください**
+* `王子`以外にも，`女王`，`王`，`機械学習`のベクトルと比較しましょう
 
 ## IMDbのDataLoaderを実装(p.359~)
 

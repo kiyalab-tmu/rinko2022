@@ -601,7 +601,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * `王子`以外にも，`女王`，`王`，`機械学習`のベクトルと比較しましょう
 
 ### Q. fastTextの日本語学習済みモデルを使用する実装
-* fastTextを実装し，簡単にコードの説明をしてください
+* fastTextを実装し，簡単にコードの説明をしてください（以下，word2vecと同様です）
 * 1単語あたりの次元数と，単語数を調べてください
 * ベクトル化したバージョンのボキャブラリーを作成し，結果を表示してみましょう
 * ボキャブラリー単語の順番を確認してください（**この確認は重要です**）
@@ -610,6 +610,20 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * `王子`以外にも，`女王`，`王`，`機械学習`のベクトルと比較しましょう
 
 ## IMDbのDataLoaderを実装(p.359~)
+### Q. IMDbデータセットをtsv形式に変換
+* IMDbデータセットについて簡単に説明してください
+* csv，tsvについて簡単に説明してください
+* IMDbデータセットを，tsv形式に変換するプログラムを実装してください（処理の内容なども説明してください）
+
+### Q. 前処理と単語分割の関数を定義
+* 前処理と単語分割の関数を実装してください
+* どのような文字整形を行なったかなど説明してください
+
+### Q. Dataset・ボキャブラリー・DataLoaderの作成
+* torchtextのバージョン違いによるエラーを回避する場合は、`import torchtext.legacy as torchtext`で`torchtext`をインポートしてください
+* torchtext.data.Fieldの使用を簡単に説明してください
+* torchtext.data.Fieldを用いて，tsvを読み込んでTEXTとLABELに施す処理を定義してください
+* Datasetを作成し，
 
 ## Transformerの実装(p.367~)
 

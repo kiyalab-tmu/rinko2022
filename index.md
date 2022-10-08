@@ -507,7 +507,21 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * GPUマシンが混雑している場合は、代表者１〜２名のみが学習を行い、その結果をシェアして発表する形式でも構いません（全員がGPUマシンで学習スクリプトを実行&精度を出すことを行わなくても良いです）
 * 学習スクリプトを回さない人でも、コーディングとエラーがないかのチェックは行いましょう
 * 下準備として，make_folders_and_data_downloads.ipynbの実行が必要です
-* 必要ライブラリ| janome, torchtext
+* 必要ライブラリ| janome, torchtext, gensim, spacy
+* バージョン依存の制約がかなり強いため，自分が試して動いたライブラリのバージョンを列挙します（記載以外でライブラリ〇〇のバージョンを知りたいなどの希望があれば連絡ください）
+```
+gensim                  4.2.0
+Janome                  0.4.2
+numpy                   1.19.5
+six                     1.15.0
+spacy                   3.4.1
+spacy-legacy            3.0.10
+spacy-loggers           1.0.3
+torch                   1.10.2
+torchfile               0.1.0
+torchtext               0.11.2
+zipp                    3.6.0
+```
 
 ## 形態素解析の実装(p.328~)
 ### Q. 機械学習における自然言語処理の流れ
@@ -530,7 +544,7 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * 前処理→単語分割を行う関数 tokenizer_with_processing を実装し、結果を確認してください
 
 ### Q. 文章データの読み込み
-* torchtextのバージョン違いによるエラーを防ぐため、`import torchtext.legacy as torchtext`で`torchtext`をインポートしてください
+* torchtextのバージョン違いによるエラーを回避する場合は、`import torchtext.legacy as torchtext`で`torchtext`をインポートしてください
 * `torchtext.data.Field`の引数や処理の役割を簡単に説明してください
 * ./data/text_train.tsvを読み込んで、テキストとラベルからなるデータセット`train_ds`を作成しましょう
 
@@ -544,6 +558,29 @@ Q.5~Q.6を通しで実行した後で下記の質問を考えるほうが良い�
 * DataLoaderを作成しましょう（バッチ化してください）
 * 出力結果を確認しましょう（ボキャブラリーと照らし合わせて、単語が正しくid化されていることを確認しましょう）
 
+## 単語のベクトル表現の仕組み(p.343~)
+### Q. word2vecでの単語ベクトル表現方法
+* 単語のid化が抱える２つの問題を説明してください
+* 単語のベクトル表現について説明してください（ベクトル化によって，２つの問題はどのように解消されますか）
+* CBOWとSkip-gramについて違いなどをそれぞれ説明してください
+* Skip-gramの方が，CBOWよりも優れている理由を説明してください
+
+### Q. fastTextでの単語ベクトル表現方法
+* fastTextについて簡単に説明してください
+* サブワードについて説明してください（英語・日本語での違いなど）
+
+## word2vec，faseTextで日本語学習済みモデルを使用する方法(p.352~)
+### Q. word2vecの日本語学習済みモデルを使用する実装
+* 注意 | 教科書はMeCabですが，使用しません
+* Janomeを使ったtokenizer_with_preprocessing（p335~の7.2）からコピーしてきましょう（説明は不要）
+* DataLoaderを
+
+
+## IMDbのDataLoaderを実装(p.359~)
+
+## Transformerの実装(p.367~)
+
+## Transformerの学習・推論，判定根拠の可視化を実装(p.367~)
 <!--- ViTについてやる？ --->
 
 # Chapter 2-6: Anomaly Detection with GANs

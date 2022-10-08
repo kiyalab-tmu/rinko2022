@@ -623,9 +623,32 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * torchtextのバージョン違いによるエラーを回避する場合は、`import torchtext.legacy as torchtext`で`torchtext`をインポートしてください
 * torchtext.data.Fieldの使用を簡単に説明してください
 * torchtext.data.Fieldを用いて，tsvを読み込んでTEXTとLABELに施す処理を定義してください
-* Datasetを作成し，
+* torchtext.data.TabularDataset.splitsを使って，Datasetを作成しましょう
+* Datasetの数が25000であることを確認しましょう
+* Datasetを訓練・検証用のデータセットに分割しましょう（それぞれ20000件と5000件）
+* ボキャブラリーを作成しましょう
+* 1単語あたりの次元数と，単語数を調べてください
+* ボキャブラリーの内容を確認しましょう
+* DataLoaderを作成し，作成されたDataLoaderからの出力を確認しましょう
+* DataLoaderからの出力がベクトル表現でない理由を説明してください
 
 ## Transformerの実装(p.367~)
+
+### Q. NLPとTransformerの関係
+* テキスト分類など，NLPにはどのようなタスクがあるか調べましょう
+* 今回は，どのNLPタスクに挑戦しますか？
+* 画像データと言語データの違いについて説明してください
+* 再帰的ネットワーク（RNN，LSTM）について説明し，その問題点もあげてください
+* 言語データへCNNを使用する方法について説明し，その問題点もあげてください
+
+### Q. Transformerのネットワーク構造と実装
+* 今回使用するTransformerの全体像を説明してください（入出力なども含めて）
+* Embedderモジュールについて説明してください(pp.369~371)
+* Embedderモジュールを実装してみましょう(pp.371~372)
+* PositionalEncoderモジュールについて説明してください(pp.373~374)
+* Transformerモジュールについて，maskも含めて説明してください(pp.375~378)
+* ClassificationHeadモジュールについて簡単に説明してください(pp.379)
+* 各モジュールを組み合わせて，Transformer（全体）を実装してください
 
 ## Transformerの学習・推論，判定根拠の可視化を実装(p.367~)
 <!--- ViTについてやる？ --->

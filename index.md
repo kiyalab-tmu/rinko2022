@@ -519,7 +519,7 @@ six                     1.15.0
 spacy                   3.4.1
 spacy-legacy            3.0.10
 spacy-loggers           1.0.3
-torch                   1.8.1+cu111
+torch                   1.10.2+cu111
 torchfile               0.1.0
 torchtext               0.11.2
 zipp                    3.4.0
@@ -527,6 +527,7 @@ zipp                    3.4.0
 * requirements.txtを用意しました｜[このファイル](https://github.com/kiyalab-tmu/2022-sem1-rinko/blob/main/HOME/PyTorch-Advanced-DNN/Chap7/requirements.txt)を任意のディレクトリにコピーし、そのディレクトリで以下を実行する　**(必ず個人のvenv内で実行すること)**
 ```
 python3 -m venv "任意の名前" # 新規でvenvを作る場合
+source "venv作ったディレクトリのパス名"/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu111
 ```

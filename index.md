@@ -520,7 +520,7 @@ spacy-legacy            3.0.10
 spacy-loggers           1.0.3
 torch                   1.8.1+cu111
 torchfile               0.1.0
-torchtext               0.11.2
+torchtext               0.11.2+cu111
 zipp                    3.4.0
 ```
 * Pytorchのインストールコマンド **(venv内で実行すること)***

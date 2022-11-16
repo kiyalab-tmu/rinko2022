@@ -524,9 +524,11 @@ torchfile               0.1.0
 torchtext               0.11.2
 zipp                    3.4.0
 ```
-* Pytorchのインストールコマンド **(venv内で実行すること)***
+* requirements.txtを用意しました｜[このファイル](https://github.com/kiyalab-tmu/2022-sem1-rinko/blob/main/HOME/PyTorch-Advanced-DNN/Chap7/requirements.txt)を任意のディレクトリにコピーし、そのディレクトリで以下を実行する　**(必ず個人のvenv内で実行すること)**
 ```
-pip install torch==1.8.1+cu111 --extra-index-url https://download.pytorch.org/whl/cu111
+python3 -m venv "任意の名前" # 新規でvenvを作る場合
+pip install --upgrade pip
+pip install -r requirements.txt --extra-index-url https://download.pytorch.org/whl/cu111
 ```
 
 ## 形態素解析の実装(p.328~)

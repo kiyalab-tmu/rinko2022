@@ -518,10 +518,14 @@ six                     1.15.0
 spacy                   3.4.1
 spacy-legacy            3.0.10
 spacy-loggers           1.0.3
-torch                   1.8.2
+torch                   1.8.1+cu111
 torchfile               0.1.0
 torchtext               0.11.2
 zipp                    3.4.0
+```
+* Pytorchのインストールコマンド **(venv内で実行すること)***
+```
+pip install torch==1.8.1+cu111 --extra-index-url https://download.pytorch.org/whl/cu111
 ```
 
 ## 形態素解析の実装(p.328~)

@@ -684,7 +684,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 # Vision Transformer (ViT)
 * 【参考書籍】山本晋太郎，徳永匡臣，箕浦大晃，邱玥（QIU YUE），品川政太朗，"Vision　Transformer入門，"技術評論社，2022年9月．
 
-<!--- --->
+<!---
 ## NLPのTransformerとViTの関係性（参考書籍→第１章）
 * NLPのTransfromer，BERT，ViBERT，DALL•E，DETR，ViTの関係を調べましょう
 * 特に，NLP→Vision and Language→Computer visionのタスクの関係について説明してください
@@ -736,10 +736,13 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 内積について説明してください（参考書籍にある例を使って構いません）
 * 内積と類似度の関係性について説明してください
 * 内積の計算と行列の積の関係性について説明してください
-* 内積の後にsoftmaxを計算する理由を説明してください（何を計算したいのか，計算後の結果は何に使うのか） <---! 加重和を計算したく，加重和は，valueの重みをつけるために使う --->
+* 内積の後にsoftmaxを計算する理由を説明してください（何を計算したいのか，計算後の結果は何に使うのか） 
 * 以上を踏まえ，QueryとKeyの計算方法の全体像をおさらいしてください
 
 ### 2-4-4 Self-Attentionの加重和（参考書籍→p.51~）
+
+--->
+<!--- 加重和を計算したく，加重和は，valueの重みをつけるために使う --->
 
 # Chapter 2-6: Anomaly Detection with GANs
 * 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください

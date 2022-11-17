@@ -685,12 +685,12 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 【参考書籍】山本晋太郎，徳永匡臣，箕浦大晃，邱玥（QIU YUE），品川政太朗，"Vision　Transformer入門，"技術評論社，2022年9月．
 
 <!---
-## NLPのTransformerとViTの関係性（参考書籍→第１章）
+### NLPのTransformerとViTの関係性（参考書籍→第１章）
 * NLPのTransfromer，BERT，ViBERT，DALL•E，DETR，ViTの関係を調べましょう
 * 特に，NLP→Vision and Language→Computer visionのタスクの関係について説明してください
 * 関係性が説明できれば十分であり，各手法を詳しく説明する必要はありません
 
-## ViTの全体像（参考書籍→p.31~）
+### ViTの全体像（参考書籍→p.31~）
 * 参考書籍の2-2を参考に，ViTの全体像を説明してください
 * Input Layer，Encoder，MLP Headについてそれぞれ簡単に概要を説明してください
 
@@ -722,7 +722,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 特に，４つの処理とコードとの対応関係，実装方法を説明してください
 * (W,H,Ch)=(32,32,3)の画像を入力し，Input Layerからの出力shapeを確認してください
 
-## Encoder（参考書籍→p.46~）
+## Self-Attention | Encoderの理解へ向けての準備（参考書籍→p.46~）
 
 ### 2-4-1 Self-Attentionの気持ち（参考書籍→p.47~）
 * Self-Attentionのモチベーションについて説明してください
@@ -737,12 +737,34 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 内積と類似度の関係性について説明してください
 * 内積の計算と行列の積の関係性について説明してください
 * 内積の後にsoftmaxを計算する理由を説明してください（何を計算したいのか，計算後の結果は何に使うのか） 
-* 以上を踏まえ，QueryとKeyの計算方法の全体像をおさらいしてください
-
-### 2-4-4 Self-Attentionの加重和（参考書籍→p.51~）
-
 --->
 <!--- 加重和を計算したく，加重和は，valueの重みをつけるために使う --->
+<!---
+* 以上を踏まえ，QueryとKeyの計算方法の全体像をおさらいしてください
+
+### 2-4-4 Self-Attentionの加重和（参考書籍→p.54~）
+* Self-Attentionの加重和の概要を説明してください
+* なぜSelf-Attentionはグローバルな画像の特徴量を学習できると言われているのでしょうか？
+
+### 2-4-5 Multi-Head Self-Attentionの加重和（参考書籍→p.55~）
+* Multi-Head Self-Attentionの概要を説明してください
+* Multi-Head Self-Attentionを使う利点はなんですか 
+--->
+<!--- ヘッド数分QKVを細かく分割することで，シングルヘッドでは得ることができない，異なる関係性をAtten Mapとして得ることができる --->
+
+<!---
+### 2-4-6 Multi-Head Self-Attentionの数式表現（参考書籍→p.57~）
+* Self-Attentionを数式で表してみましょう
+* √Dh で除算する理由を説明してください
+* Multi-Head　Self-Attentionにおいて， **W**^O を導入する理由を説明してください
+
+### 2-4-7 Multi-Head Self-Attentionの実装（参考書籍→p.59~）
+* Multi-Head　Self-Attentionを実装しましょう
+* 特に，2-4-6（前項）で説明した数式とコードとの対応関係，実装方法を説明してください
+* Input Layerからの出力をMulti-Head　Self-Attentionに入力し，出力shapeを確認してください
+--->
+
+## Encoder（参考書籍→p.61~）
 
 # Chapter 2-6: Anomaly Detection with GANs
 * 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください

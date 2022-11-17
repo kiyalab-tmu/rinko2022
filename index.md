@@ -10,6 +10,7 @@ layout: default
 * [Chapter 2-7: NLP with Transformer](#chapter-2-7-nlp-with-transformer)
 * [Chapter 3-1: Vision Transformer (ViT)](#chapter-3-1-vision-transformer-vit)
 * [Chapter 2-6: Anomaly Detection with GANs](#chapter-2-6-anomaly-detection-with-gans)
+* [Chapter 4-1: Diffusion Probabilistic Models](#chapter-4-1-diffusion-probabilistic-models)
 
 # Textbook 
 * Chapter 1: 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
@@ -684,6 +685,9 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 可視化した２つのテストデータについて簡単に分析してみましょう
 
 # Chapter 3-1: Vision Transformer (ViT)
+* 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください
+* GPUマシンが混雑している場合は、代表者１〜２名のみが学習を行い、その結果をシェアして発表する形式でも構いません（全員がGPUマシンで学習スクリプトを実行&精度を出すことを行わなくても良いです）
+* 学習スクリプトを回さない人でも、コーディングとエラーがないかのチェックは行いましょう
 * 【参考書籍】山本晋太郎，徳永匡臣，箕浦大晃，邱玥（QIU YUE），品川政太朗，"Vision　Transformer入門，"技術評論社，2022年9月．
 
 <!---
@@ -764,9 +768,54 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * Multi-Head　Self-Attentionを実装しましょう
 * 特に，2-4-6（前項）で説明した数式とコードとの対応関係，実装方法を説明してください
 * Input Layerからの出力をMulti-Head　Self-Attentionに入力し，出力shapeを確認してください
---->
+
 
 ## Encoder（参考書籍→p.61~）
+
+### 2-5-1 Encoder Block（参考書籍→p.61~）
+* Encoder Blockの概要と３つの処理について簡単に説明してください
+
+### 2-5-2 Layer Normalization（参考書籍→p.62~）
+* Batch NormalizationはなぜViTでは有効でないのか簡単に説明してください
+* Layer Normalizationについて，数式を含めて説明してください
+* Batch NormalizationとLayer Normalizationの違いを説明してください
+--->
+<!--- ミニバッチ内のデータ全部を使って計算するのがBN，ミニバッチ内のデータ１つずつ取り出して計算するのがLN --->
+<!--- 
+### 2-5-3 MLP（参考書籍→p.63~）
+* MLPの概要について簡単に説明してください
+* GERUについて簡単に説明してください
+
+### 2-5-4 Encoder Blockの数式表現（参考書籍→p.64~）
+* Encoder Blockを数式で表してみましょう（スキップコネクションがあることに注意）
+
+### 2-5-5 Encoder Blockの実装（参考書籍→p.64~）
+* Encoder Blockを実装しましょう
+* 特に，2-5-4（前項）で説明した数式とコードとの対応関係，実装方法を説明してください
+* Input Layerからの出力をEncoder Blockに入力し，出力shapeを確認してください
+
+## ViTの実装（参考書籍→p.66~）
+
+### 2-6-1 MLP Head（参考書籍→p.66~）
+* MLP Headについて，その構造などを簡単に説明してください
+
+### 2-6-2 ViTの数式（参考書籍→p.66~）
+* 参考書籍のpp.66~67を参考にし，ViTを数式で説明してください
+
+### 2-6-3 ViTの実装（参考書籍→p.67~）
+* これまで学んだことをまとめて，ViTを実装を完成させましょう
+* 2-6-2（前項）で説明した数式とコードとの対応関係を説明してください
+* Input Layer，Encoder Block，MLP Headとコードの対応関係を説明してください
+* ViTに任意の画像（バッチ）を入力し，出力shapeを確認しましょう（前にも触れましたが，Pytorchではshapeが(batch_size, ch, h, w)になることに注意！）
+
+## ViTの実験（参考書籍→p.74~）
+
+* 事前学習されたViTをCIFAR10データセットで学習させましょう
+* Lossの挙動を確認してください
+* CIFAR10のテストデータに対する精度を確認してみましょう
+* ハイパーパラメータは自由に決めて構いません（教科書に細かく書いてあるので，必要であれば参考にしてください）
+* （時間があれば）ResNetなどの他のモデルや，事前学習なしのViTとも比較してみましょう
+--->
 
 # Chapter 2-6: Anomaly Detection with GANs
 * 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください
@@ -843,3 +892,5 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * AnoGANと比較して，生成ノイズzの計算時間はどのように変わりましたか
 ※ x.float()でデータの型を修正する必要があるかもしれません
 --->
+
+# Chapter 4-1: Diffusion Probabilistic Models

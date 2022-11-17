@@ -14,6 +14,7 @@ layout: default
 # Textbook 
 * Chapter 1: 下山 輝昌、伊藤 淳二、露木 宏志 著「Python実践 データ加工/可視化 100本ノック」(秀和システム)
 * Chapter 2: 小川雄太郎 著「つくりながら学ぶ！PyTorchによる発展ディープラーニング」（マイナビ出版）
+* Chapter 3: 山本晋太郎、徳永匡臣、箕浦大晃、邱玥、品川政太朗 著「Vision　Transformer入門」 (技術評論社)
 
 # GitHub Repo
 * [2022-sem1-rinko](https://github.com/kiyalab-tmu/2022-sem1-rinko)

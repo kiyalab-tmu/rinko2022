@@ -8,6 +8,7 @@ layout: default
 * [Chapter 2-1: Image Classification with Transfer Learning and Fine Tuning](#chapter-2-1-image-classification-with-transfer-learning-and-fine-tuning)
 * [Chapter 2-5: Image Generation with GANs](#chapter-2-5-image-generation-with-gans)
 * [Chapter 2-7: NLP with Transformer](#chapter-2-7-nlp-with-transformer)
+* [Chapter 3-1: Vision Transformer (ViT)](#chapter-3-1-vision-transformer-vit)
 * [Chapter 2-6: Anomaly Detection with GANs](#chapter-2-6-anomaly-detection-with-gans)
 
 # Textbook 
@@ -681,7 +682,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 正解できたテストデータ，正解できなかったテストデータをそれぞれ可視化してみましょう
 * 可視化した２つのテストデータについて簡単に分析してみましょう
 
-# Vision Transformer (ViT)
+# Chapter 3-1: Vision Transformer (ViT)
 * 【参考書籍】山本晋太郎，徳永匡臣，箕浦大晃，邱玥（QIU YUE），品川政太朗，"Vision　Transformer入門，"技術評論社，2022年9月．
 
 <!---

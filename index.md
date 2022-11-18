@@ -8,7 +8,9 @@ layout: default
 * [Chapter 2-1: Image Classification with Transfer Learning and Fine Tuning](#chapter-2-1-image-classification-with-transfer-learning-and-fine-tuning)
 * [Chapter 2-5: Image Generation with GANs](#chapter-2-5-image-generation-with-gans)
 * [Chapter 2-7: NLP with Transformer](#chapter-2-7-nlp-with-transformer)
-* [Chapter 3-1: Vision Transformer (ViT)](#chapter-3-1-vision-transformer-vit)
+* [Chapter 3-1: TransformerからVision Transformerへの進化](#chapter-3-1-transformerからvision-transformerへの進化)
+* [Chapter 3-2: Vision Transformerの基礎と実装](#chapter-3-2-vision-transformerの基礎と実装)
+* [Chapter 3-3: 実験と可視化によるVision Transformerの探究](#chapter-3-3-実験と可視化によるvision-transformerの探究)
 * [Chapter 2-6: Anomaly Detection with GANs](#chapter-2-6-anomaly-detection-with-gans)
 * [Chapter 4-1: Diffusion Probabilistic Models](#chapter-4-1-diffusion-probabilistic-models)
 
@@ -684,13 +686,12 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 正解できたテストデータ，正解できなかったテストデータをそれぞれ可視化してみましょう
 * 可視化した２つのテストデータについて簡単に分析してみましょう
 
-# Chapter 3-1: Vision Transformer (ViT)
+# Chapter 3-1: TransformerからVision Transformerへの進化
 * 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください
 * GPUマシンが混雑している場合は、代表者１〜２名のみが学習を行い、その結果をシェアして発表する形式でも構いません（全員がGPUマシンで学習スクリプトを実行&精度を出すことを行わなくても良いです）
 * 学習スクリプトを回さない人でも、コーディングとエラーがないかのチェックは行いましょう
 
-<!---
-### NLPのTransformerとViTの関係性（教科書→第１章）
+### NLPのTransformerとViTの関係性（教科書→p.2~）
 * NLPのTransfromer，BERT，ViBERT，DALL•E，DETR，ViTの関係を調べましょう
 * 特に，NLP→Vision and Language→Computer visionのタスクの関係について説明してください
 * 関係性が説明できれば十分であり，各手法を詳しく説明する必要はありません
@@ -699,6 +700,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 教科書の2-2を参考に，ViTの全体像を説明してください
 * Input Layer，Encoder，MLP Headについてそれぞれ簡単に概要を説明してください
 
+# Chapter 3-2: Vision Transformerの基礎と実装
 ## Input Layer（教科書→p.34~）
 * Input Layerでは，主に４つ処理を行いますが，それらは何であるか調べましょう（教科書の2-3を写して構いません）
 
@@ -742,9 +744,8 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 内積と類似度の関係性について説明してください
 * 内積の計算と行列の積の関係性について説明してください
 * 内積の後にsoftmaxを計算する理由を説明してください（何を計算したいのか，計算後の結果は何に使うのか） 
---->
 <!--- 加重和を計算したく，加重和は，valueの重みをつけるために使う --->
-<!---
+
 * 以上を踏まえ，QueryとKeyの計算方法の全体像をおさらいしてください
 
 ### 2-4-4 Self-Attentionの加重和（教科書→p.54~）
@@ -754,10 +755,9 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 ### 2-4-5 Multi-Head Self-Attentionの加重和（教科書→p.55~）
 * Multi-Head Self-Attentionの概要を説明してください
 * Multi-Head Self-Attentionを使う利点はなんですか 
---->
+
 <!--- ヘッド数分QKVを細かく分割することで，シングルヘッドでは得ることができない，異なる関係性をAtten Mapとして得ることができる --->
 
-<!---
 ### 2-4-6 Multi-Head Self-Attentionの数式表現（教科書→p.57~）
 * Self-Attentionを数式で表してみましょう
 * √Dh で除算する理由を説明してください
@@ -778,9 +778,8 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * Batch NormalizationはなぜViTでは有効でないのか簡単に説明してください
 * Layer Normalizationについて，数式を含めて説明してください
 * Batch NormalizationとLayer Normalizationの違いを説明してください
---->
 <!--- ミニバッチ内のデータ全部を使って計算するのがBN，ミニバッチ内のデータ１つずつ取り出して計算するのがLN --->
-<!--- 
+
 ### 2-5-3 MLP（教科書→p.63~）
 * MLPの概要について簡単に説明してください
 * GERUについて簡単に説明してください
@@ -807,14 +806,16 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * Input Layer，Encoder Block，MLP Headとコードの対応関係を説明してください
 * ViTに任意の画像（バッチ）を入力し，出力shapeを確認しましょう（前にも触れましたが，Pytorchではshapeが(batch_size, ch, h, w)になることに注意！）
 
-## ViTの実験（教科書→p.74~）
+# Chapter 3-3: 実験と可視化によるVision Transformerの探究
 
-* 事前学習されたViTをCIFAR10データセットで学習させましょう
+## ViTの実験（教科書→p.74~）
+* ImageNet・FractalDB-1K・CIFAR10データセットについてそれぞれ簡単に説明してください
+* ImageNetで事前学習されたViTをCIFAR10データセットで学習させましょう
 * Lossの挙動を確認してください
 * CIFAR10のテストデータに対する精度を確認してみましょう
 * ハイパーパラメータは自由に決めて構いません（教科書に細かく書いてあるので，必要であれば参考にしてください）
-* （時間があれば）ResNetなどの他のモデルや，事前学習なしのViTとも比較してみましょう
---->
+* ImageNet，FractalDB-1K，CIFAR100の学習・テストは不要です
+<!---（時間があれば）ResNetなどの他のモデルや，事前学習なしのViTとも比較してみましょう --->
 
 # Chapter 2-6: Anomaly Detection with GANs
 * 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください

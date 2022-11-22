@@ -912,19 +912,21 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * [Reference 2 - paper](https://proceedings.mlr.press/v37/sohl-dickstein15.html)
 * [Reference 3 - paper](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
 * [Reference 4 - website](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
-* [Reference 5 - github](https://github.com/ermongroup/ddim)
+* [Reference 5 - website](https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-1/)
+* [Reference 6 - github](https://github.com/ermongroup/ddim)
 
 ### Q. 準備
 
 ### Q. Diffusion probabilistic models（DPMs）の基礎
 * 確率モデルの2つのトレードオフ（tractable，flexible）について説明してください → Ref.2（1.）
 * DPMsの特徴，DPMsを使うメリットについて説明してください → Ref.2（1.1）
-* DPMsの拡散過程（diffusion process）・生成過程（reverse process）の全体像を説明してください → Ref.1（図2），Ref.2（図1）
 * Denoising Diffusion Probabilistic Models (DDPMs)とStochastic Differential Equations (SDEs)について**簡単に**調べましょう → Ref.1（2.1〜2.3）
-* * Noise Conditioned Score Networks (NCSNs)については，列挙のみで説明は不要です
-* * 数式不要で，2〜3文程度に要約するだけで構いません
+  * Noise Conditioned Score Networks (NCSNs)については，列挙のみで説明は不要です
+  * 数式不要で，2〜3文程度に要約するだけで構いません
+  * いずれも，DPMsの表現方法に関係しています
+* DPMsの拡散過程（diffusion process）・生成過程（reverse process）の全体像を説明してください → Ref.1（図2），Ref.2（図1）
 * DDPMsの学習過程（forward process，diffusion process）について説明してください → Ref.1，**Ref.3（Algorithm1）**
 * DDPMsの目的関数について調べましょう（簡素化された目的関数の説明のみでも可）→ **Ref.1（式4）**，Ref.3（式14）
 * DDPMsによるサンプルの生成過程（reverse process）について説明してください → Ref.1，**Ref.3（Algorithm2）**
 * DDPMsのを数式で説明してみましょう → **Ref.1（式1，2）**，Ref.3（式2，1）
-* GANやVAEと比較して，DPMsの違いや良い点をまとめましょう（わかった範囲で構いません）→ Ref.1（2.4）
+* GANやVAEと比較して，DPMsの違いや良い点をまとめましょう（わかった範囲で構いません）→ Ref.1（2.4），Ref.5

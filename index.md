@@ -908,3 +908,10 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 --->
 
 # Chapter 4-1: Diffusion Probabilistic Models
+* [Reference - survey paper](https://arxiv.org/abs/2209.04747)
+* [Reference - paper](https://proceedings.mlr.press/v37/sohl-dickstein15.html)
+* [Reference - paper](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
+* [Reference - website](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
+* [Reference - gi](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
+
+### Q. Efficient GANによる異常検知

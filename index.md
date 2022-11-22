@@ -914,29 +914,45 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * [Reference 4 - website | What are Diffusion Models?](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
 * [Reference 5 - website | Improving Diffusion Models as an Alternative To GANs](https://developer.nvidia.com/blog/improving-diffusion-models-as-an-alternative-to-gans-part-1/)
 * [Reference 6 - github | Denoising Diffusion Implicit Models (DDIM)](https://github.com/ermongroup/ddim)
+* [Reference 7 -book | 須山敦志 著 ベイズ深層学習（講談社） ](https://www.kspub.co.jp/book/detail/5168707.html)
+  * 研究室にあります
 
-### Q. 準備
+### 準備
+* 本設問に関するスライドの作成は強要しません（自習として使ってください）
+* いずれも，拡散モデルを学ぶ上で知っていると役立つ知識です
+  * [決定論（的）モデルと確率（的）モデルについて](http://data-science.tokyo/ed/edj1-6-2-3.html)
+  * ベイズ推論と深層学習の独立性・共通点
+  * 条件付き確率・事前確率・事後確率・事前分布・事後分布
+  * マルコフ過程
 
-### Q. Diffusion probabilistic models（DPMs）の基礎
-* 確率モデルの2つのトレードオフ（tractable，flexible）について説明してください → Ref.2（1.）
+### Q.1 Diffusion probabilistic models（DPMs）の基礎
 * DPMsの特徴，DPMsを使うメリットについて説明してください → Ref.2（1.1）
 * Denoising Diffusion Probabilistic Models (DDPMs)とStochastic Differential Equations (SDEs)について**簡単に**調べましょう → Ref.1（2.1〜2.3）
   * Noise Conditioned Score Networks (NCSNs)については，列挙のみで説明は不要です
   * 数式不要で，2〜3文程度に要約するだけで構いません
   * いずれも，DPMsの表現方法に関係しています
 * DPMsの拡散過程（diffusion process）・生成過程（reverse process）の全体像を説明してください → Ref.1（図2），Ref.2（図1）
+
+### Q.2 DPMsの学習
+* ここでは，DDPMsにターゲットを絞ります
 * DDPMsの学習（forward process，diffusion process）について説明してください → Ref.1，**Ref.3（Algorithm1）**
 * DDPMsの目的関数について調べましょう（簡素化された目的関数の説明のみで可）→ **Ref.1（式4）**，Ref.3（式14）
 * DDPMsによるサンプルの生成（reverse process）について説明してください → Ref.1，**Ref.3（Algorithm2）**
-* DDPMsのを数式で説明してみましょう → **Ref.1（式1，2）**，Ref.3（式2，1）
-* GANやVAEと比較して，DPMsの違いや良い点，劣っている点をまとめましょう → Ref.1（2.4），Ref.5
-  * わかった範囲で構いません（深追いする必要はありません）
+* DDPMsのを数式で説明してみましょう → **Ref.1（式1と2）**，Ref.3（式2と1）
 
-### Q. DPMsの実装
-* DDIMとDDPMの違い・関係性を**簡単に**説明してください
+### Q.3 他の手法との比較
+* GANやVAEと比較して，DPMsの違いや良い点，劣っている点をまとめましょう → Ref.1（2.4），Ref.4，Ref.5
+
+### Q.4 DPMsの実装
+* DDIMとDDPMの違い・関係性を**簡単に**説明してください → Ref.1（3.1の特にp.8）
   * 数式不要で，1文程度に要約するだけで構いません
 * [DDIM](https://github.com/ermongroup/ddim)のリポジトリをクローンしましょう
-* DDIMの学習（forward process，diffusion process）に該当する実装を見つけ，上での説明との対応関係を解説してください
-* DDIMの目的関数（損失の計算）に該当する実装を見つけ，上での説明との対応関係を解説してください
-* DDIMによるサンプルの生成（reverse process）に該当する実装を見つけ，上での説明との対応関係を解説してください
-* DDIMのリポジトリを
+* DDIMの学習（forward process，diffusion process）に該当する実装を見つけ，上での説明（Q.2）との対応関係を解説してください
+* DDIMの目的関数（損失の計算）に該当する実装を見つけ，上での説明（Q.2）との対応関係を解説してください
+* DDIMによるサンプルの生成（reverse process）に該当する実装を見つけ，上での説明（Q.2）との対応関係を解説してください
+
+### Q.5 DPMsによるサンプルの生成
+* [DDIMのリポジトリ](https://github.com/ermongroup/ddim#sampling-from-the-model)を使って，画像を生成してみましょう（データセットは任意）
+  * 学習済みのパラーメータを利用して構いません（学習は不要です）
+  * [CelebAの学習済みパラメータ](https://drive.google.com/file/d/1R_H-fJYXSH79wfSKs9D-fuKQVan5L-GR/view)
+  * [CIFAR10およびLSUN](https://heibox.uni-heidelberg.de/d/01207c3f6b8441779abf/?p=%2Fdiffusion_models_converted&mode=list) ←[リンク元](https://github.com/pesser/pytorch_diffusion#running-conversions)

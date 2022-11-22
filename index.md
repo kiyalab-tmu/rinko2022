@@ -648,6 +648,8 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * DataLoaderを作成し，作成されたDataLoaderからの出力を確認しましょう
 * DataLoaderからの出力がベクトル表現でない理由を説明してください
 
+> 11/29（火）までの課題はここまで
+
 ## Transformerの実装(p.367~)
 ### Q. NLPとTransformerの関係
 * テキスト分類など，NLPにはどのようなタスクがあるか調べましょう

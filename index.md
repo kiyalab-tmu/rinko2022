@@ -688,6 +688,8 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 正解できたテストデータ，正解できなかったテストデータをそれぞれ可視化してみましょう
 * 可視化した２つのテストデータについて簡単に分析してみましょう
 
+> 12/6（火）までの課題はここまで
+
 # Chapter 3-1: TransformerからVision Transformerへの進化
 * 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください
 * GPUマシンが混雑している場合は、代表者１〜２名のみが学習を行い、その結果をシェアして発表する形式でも構いません（全員がGPUマシンで学習スクリプトを実行&精度を出すことを行わなくても良いです）
@@ -731,6 +733,8 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 特に，４つの処理とコードとの対応関係，実装方法を説明してください
 * (W,H,Ch)=(32,32,3)の画像を入力し，Input Layerからの出力shapeを確認してください
 
+> /（火）までの課題はここまで
+
 ## Self-Attention | Encoderの理解へ向けての準備（教科書→p.46~）
 
 ### 2-4-1 Self-Attentionの気持ち（教科書→p.47~）
@@ -770,6 +774,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 特に，2-4-6（前項）で説明した数式とコードとの対応関係，実装方法を説明してください
 * Input Layerからの出力をMulti-Head　Self-Attentionに入力し，出力shapeを確認してください
 
+> /（火）までの課題はここまで
 
 ## Encoder（教科書→p.61~）
 
@@ -819,6 +824,8 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * ImageNet，FractalDB-1K，CIFAR100の学習・テストは不要です
 <!---（時間があれば）ResNetなどの他のモデルや，事前学習なしのViTとも比較してみましょう --->
 
+> /（火）までの課題はここまで
+
 # Chapter 2-6: Anomaly Detection with GANs
 * 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください
 * GPUマシンが混雑している場合は、代表者１〜２名のみが学習を行い、その結果をシェアして発表する形式でも構いません（全員がGPUマシンで学習スクリプトを実行&精度を出すことを行わなくても良いです）
@@ -855,6 +862,8 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * テスト画像に最もよく似たzを生成しましょう（上の設問で作成したプログラムを使用）
 * 生成したノイズzを使って，Generatorから画像を生成し，lossと生成画像を表示させましょう
 * AnoGANの問題点を調査しましょう
+
+> /（火）までの課題はここまで
 
 ## Efficient GANの概要(p.303~)
 ### Q. Efficient GAN
@@ -893,6 +902,9 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 異常度を計算し，比較しましょう
 * AnoGANと比較して，生成ノイズzの計算時間はどのように変わりましたか
 ※ x.float()でデータの型を修正する必要があるかもしれません
+
+> /（火）までの課題はここまで
+
 --->
 
 # Chapter 4-1: Diffusion Probabilistic Models

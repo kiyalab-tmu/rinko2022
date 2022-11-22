@@ -917,8 +917,14 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 ### Q. 準備
 
 ### Q. Diffusion probabilistic models（DPMs）の基礎
-* 確率モデルの2つのトレードオフ（）について説明してください → Ref.2
-* DPMsの特徴，DPMsを使うメリットについて説明してください → Ref.2
-* DPMsの特徴，DPMsを使うメリットについて説明してください → Ref.2
-* DPMsの学習過程（forward process，diffusion process）について説明してください → Ref.1，**Ref.3**
-* DPMsによるサンプルの生成過程について説明してください → Ref.1，Ref.3
+* 確率モデルの2つのトレードオフ（tractable，flexible）について説明してください → Ref.2（1.）
+* DPMsの特徴，DPMsを使うメリットについて説明してください → Ref.2（1.1）
+* DPMsの拡散過程（diffusion process）・生成過程（reverse process）の全体像を説明してください → Ref.1（図2），Ref.2（図1）
+* Denoising Diffusion Probabilistic Models (DDPMs)とStochastic Differential Equations (SDEs)について**簡単に**調べましょう → Ref.1（2.1〜2.3）
+* * Noise Conditioned Score Networks (NCSNs)については，列挙のみで説明は不要です
+* * 数式不要で，2〜3文程度に要約するだけで構いません
+* DDPMsの学習過程（forward process，diffusion process）について説明してください → Ref.1，**Ref.3（Algorithm1）**
+* DDPMsの目的関数について調べましょう（簡素化された目的関数の説明のみでも可）→ **Ref.1（式4）**，Ref.3（式14）
+* DDPMsによるサンプルの生成過程（reverse process）について説明してください → Ref.1，**Ref.3（Algorithm2）**
+* DDPMsのを数式で説明してみましょう → **Ref.1（式1，2）**，Ref.3（式2，1）
+* GANやVAEと比較して，DPMsの違いや良い点をまとめましょう（わかった範囲で構いません）→ Ref.1（2.4）

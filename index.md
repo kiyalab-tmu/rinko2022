@@ -908,10 +908,14 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 --->
 
 # Chapter 4-1: Diffusion Probabilistic Models
-* [Reference - survey paper](https://arxiv.org/abs/2209.04747)
-* [Reference - paper](https://proceedings.mlr.press/v37/sohl-dickstein15.html)
-* [Reference - paper](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
-* [Reference - website](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
-* [Reference - gi](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
+* [Reference 1 - survey paper](https://arxiv.org/abs/2209.04747)
+* [Reference 2 - paper](https://proceedings.mlr.press/v37/sohl-dickstein15.html)
+* [Reference 3 - paper](https://proceedings.neurips.cc/paper/2020/hash/4c5bcfec8584af0d967f1ab10179ca4b-Abstract.html)
+* [Reference 4 - website](https://lilianweng.github.io/posts/2021-07-11-diffusion-models/)
+* [Reference 5 - github](https://github.com/ermongroup/ddim)
 
-### Q. Efficient GANによる異常検知
+### Q. 準備
+
+### Q. Diffusion probabilistic modelsの基礎
+* 確率モデルの2つのトレードオフ（）について説明してください → Ref.2
+* Diffusion 

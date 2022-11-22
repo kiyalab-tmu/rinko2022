@@ -916,6 +916,9 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 
 ### Q. 準備
 
-### Q. Diffusion probabilistic modelsの基礎
+### Q. Diffusion probabilistic models（DPMs）の基礎
 * 確率モデルの2つのトレードオフ（）について説明してください → Ref.2
-* Diffusion 
+* DPMsの特徴，DPMsを使うメリットについて説明してください → Ref.2
+* DPMsの特徴，DPMsを使うメリットについて説明してください → Ref.2
+* DPMsの学習過程（forward process，diffusion process）について説明してください → Ref.1，**Ref.3**
+* DPMsによるサンプルの生成過程について説明してください → Ref.1，Ref.3

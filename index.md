@@ -952,7 +952,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * DDIMによるサンプルの生成（reverse process）に該当する実装を見つけ，上での説明（Q.2）との対応関係を解説してください
 
 ### Q.5 DPMsによるサンプルの生成
-* [DDIMのリポジトリ](https://github.com/ermongroup/ddim#sampling-from-the-model)を使って，画像を生成してみましょう（データセットは任意）
+* [DDIM(DDPMs)のリポジトリ](https://github.com/ermongroup/ddim#sampling-from-the-model)を使って，画像を生成してみましょう（データセットは任意）
   * 学習済みのパラーメータを利用して構いません（学習は不要です）
   * [CelebAの学習済みパラメータ](https://drive.google.com/file/d/1R_H-fJYXSH79wfSKs9D-fuKQVan5L-GR/view)
   * [CIFAR10およびLSUN](https://heibox.uni-heidelberg.de/d/01207c3f6b8441779abf/?p=%2Fdiffusion_models_converted&mode=list) ←[リンク元](https://github.com/pesser/pytorch_diffusion#running-conversions)

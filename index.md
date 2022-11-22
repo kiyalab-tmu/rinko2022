@@ -937,5 +937,5 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
   * 数式不要で，1文程度に要約するだけで構いません
 * [DDIM](https://github.com/ermongroup/ddim)のリポジトリをクローンしましょう
 * DDIMの学習（forward process，diffusion process）に該当する実装を見つけ，上での説明との対応関係を解説してください
-* DDIMの目的関数（損失に該当する実装を見つけ，上での説明との対応関係を解説してください
-
+* DDIMの目的関数（損失の計算）に該当する実装を見つけ，上での説明との対応関係を解説してください
+* D

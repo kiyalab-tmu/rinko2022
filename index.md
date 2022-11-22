@@ -931,7 +931,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
   * Noise Conditioned Score Networks (NCSNs)については，列挙のみで説明は不要です
   * 数式不要で，2〜3文程度に要約するだけで構いません
   * いずれも，DPMsの表現方法に関係しています
-* DPMsの拡散過程（diffusion process）・生成過程（reverse process）の全体像を説明してください → Ref.1（図2），Ref.2（図1）
+* DPMsの拡散過程（diffusion process）・生成過程（reverse process）の全体像を説明してください → Ref.1（図2），Ref.2（図1），Ref.3（図2）
 
 ### Q.2 DPMsの学習
 * ここでは，DDPMsにターゲットを絞ります

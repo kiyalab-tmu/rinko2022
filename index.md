@@ -936,4 +936,6 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * DDIMとDDPMの違い・関係性を**簡単に**説明してください
   * 数式不要で，1文程度に要約するだけで構いません
 * [DDIM](https://github.com/ermongroup/ddim)のリポジトリをクローンしましょう
-* DDIMの学習（forward process，diffusion process）に該当する実装を
+* DDIMの学習（forward process，diffusion process）に該当する実装を見つけ，上での説明との対応関係を解説してください
+* DDIMの目的関数（損失に該当する実装を見つけ，上での説明との対応関係を解説してください
+

@@ -956,3 +956,9 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
   * 学習済みのパラーメータを利用して構いません（学習は不要です）
   * [CelebAの学習済みパラメータ](https://drive.google.com/file/d/1R_H-fJYXSH79wfSKs9D-fuKQVan5L-GR/view)
   * [CIFAR10およびLSUN](https://heibox.uni-heidelberg.de/d/01207c3f6b8441779abf/?p=%2Fdiffusion_models_converted&mode=list) ←[リンク元](https://github.com/pesser/pytorch_diffusion#running-conversions)
+
+
+<img src="figs/0_999.png" width="384">
+<img src="figs/1_999.png" width="384">
+<img src="figs/3_999.png" width="384">
+<img src="figs/4_999.png" width="384">

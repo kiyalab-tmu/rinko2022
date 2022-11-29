@@ -958,7 +958,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
   * [CIFAR10およびLSUN](https://heibox.uni-heidelberg.de/d/01207c3f6b8441779abf/?p=%2Fdiffusion_models_converted&mode=list) ←[リンク元](https://github.com/pesser/pytorch_diffusion#running-conversions)
 
 
-<img src="figs/0_999.png" width="384">
-<img src="figs/1_999.png" width="384">
-<img src="figs/3_999.png" width="384">
-<img src="figs/4_999.png" width="384">
+<img src="figs/0_999.png" width="128">
+<img src="figs/1_999.png" width="128">
+<img src="figs/3_999.png" width="128">
+<img src="figs/4_999.png" width="128">

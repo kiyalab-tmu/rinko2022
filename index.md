@@ -832,7 +832,6 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 学習スクリプトを回さない人でも、コーディングとエラーがないかのチェックは行いましょう
 * 下準備として，make_folders_and_data_downloads.ipynbの実行が必要です
 
-<!---
 ## GANによる異常画像検知のメカニズム(p.290~)
 ### Q. 準備
 * 異常画像検出とは何かと，その重要性について説明してください
@@ -905,8 +904,6 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 
 > /（火）までの課題はここまで
 
---->
-
 # Chapter 4-1: Diffusion Probabilistic Models
 * [Reference 1 - survey paper | Diffusion Models in Vision: A Survey](https://arxiv.org/abs/2209.04747)
 * [Reference 2 - paper | Deep Unsupervised Learning using Nonequilibrium Thermodynamics](https://proceedings.mlr.press/v37/sohl-dickstein15.html)
@@ -956,9 +953,6 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
   * 学習済みのパラーメータを利用して構いません（学習は不要です）
   * [CelebAの学習済みパラメータ](https://drive.google.com/file/d/1R_H-fJYXSH79wfSKs9D-fuKQVan5L-GR/view)
   * [CIFAR10およびLSUN](https://heibox.uni-heidelberg.de/d/01207c3f6b8441779abf/?p=%2Fdiffusion_models_converted&mode=list) ←[リンク元](https://github.com/pesser/pytorch_diffusion#running-conversions)
+  * 生成例↓
 
-
-<img src="figs/0_999.png" width="128">
-<img src="figs/1_999.png" width="128">
-<img src="figs/3_999.png" width="128">
-<img src="figs/4_999.png" width="128">
+<img src="figs/0_999.png" width="128">　<img src="figs/1_999.png" width="128">　<img src="figs/3_999.png" width="128">　<img src="figs/4_999.png" width="128">

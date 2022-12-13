@@ -733,7 +733,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 特に，４つの処理とコードとの対応関係，実装方法を説明してください
 * (W,H,Ch)=(32,32,3)の画像を入力し，Input Layerからの出力shapeを確認してください
 
-> /（火）までの課題はここまで
+> 12/13（火）までの課題はここまで
 
 ## Self-Attention | Encoderの理解へ向けての準備（教科書→p.46~）
 
@@ -774,7 +774,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * 特に，2-4-6（前項）で説明した数式とコードとの対応関係，実装方法を説明してください
 * Input Layerからの出力をMulti-Head　Self-Attentionに入力し，出力shapeを確認してください
 
-> /（火）までの課題はここまで
+> 12/20（火）までの課題はここまで
 
 ## Encoder（教科書→p.61~）
 

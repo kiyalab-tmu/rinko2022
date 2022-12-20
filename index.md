@@ -824,7 +824,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * ImageNet，FractalDB-1K，CIFAR100の学習・テストは不要です
 <!---（時間があれば）ResNetなどの他のモデルや，事前学習なしのViTとも比較してみましょう --->
 
-> /（火）までの課題はここまで
+> 1/10（火）までの課題はここまで
 
 # Chapter 2-6: Anomaly Detection with GANs
 * 特に指定がない限り、教科書で用いているPytorchのサンプルコードを利用してください

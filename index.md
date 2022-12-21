@@ -937,6 +937,8 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * DDPMsによるサンプルの生成（reverse process）について説明してください → Ref.1，**Ref.3（Algorithm2）**
 * DDPMsのを数式で説明してみましょう → **Ref.1（式1と2）**，Ref.3（式2と1）
 
+※拡散過程=拡散モデルの学習ではないので注意（拡散過程はニューラルネットなどによるパラメータを必要としません）
+
 ### Q.3 他の手法との比較
 * GANやVAEと比較して，DPMsの違いや良い点，劣っている点をまとめましょう → Ref.1（2.4），Ref.4，Ref.5
 
@@ -944,7 +946,7 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 * DDIMとDDPMの違い・関係性を**簡単に**説明してください → Ref.1（3.1の特にp.8）
   * 数式不要で，1文程度に要約するだけで構いません
 * [DDIM](https://github.com/ermongroup/ddim)のリポジトリをクローンしましょう
-* DDIMの学習（forward process，diffusion process）に該当する実装を見つけ，上での説明（Q.2）との対応関係を解説してください
+* DDIMの学習に該当する実装を見つけ，上での説明（Q.2）との対応関係を解説してください
 * DDIMの目的関数（損失の計算）に該当する実装を見つけ，上での説明（Q.2）との対応関係を解説してください
 * DDIMによるサンプルの生成（reverse process）に該当する実装を見つけ，上での説明（Q.2）との対応関係を解説してください
 

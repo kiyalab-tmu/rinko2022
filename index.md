@@ -932,12 +932,13 @@ train_ds, val_ds, test_ds = torchtext.data.TabularDataset.splits(
 
 ### Q.2 DPMsの学習
 * ここでは，DDPMsにターゲットを絞ります
-* DDPMsの学習（forward process，diffusion process）について説明してください → Ref.1，**Ref.3（Algorithm1）**
+* DDPMsの学習について説明してください → Ref.1，**Ref.3（Algorithm1）**
 * DDPMsの目的関数について調べましょう（簡素化された目的関数の説明のみで可）→ **Ref.1（式4）**，Ref.3（式14）
 * DDPMsによるサンプルの生成（reverse process）について説明してください → Ref.1，**Ref.3（Algorithm2）**
 * DDPMsのを数式で説明してみましょう → **Ref.1（式1と2）**，Ref.3（式2と1）
 
 ※拡散過程=拡散モデルの学習ではないので注意（拡散過程はニューラルネットなどによるパラメータを必要としません）
+※ただし，生成過程で必要なモデルの学習は，ある時刻tにおけるモデルの出力がノイズになるように学習しているという点で，拡散過程にやや似ているところがあります
 
 ### Q.3 他の手法との比較
 * GANやVAEと比較して，DPMsの違いや良い点，劣っている点をまとめましょう → Ref.1（2.4），Ref.4，Ref.5
